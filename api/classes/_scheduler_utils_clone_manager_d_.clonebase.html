@@ -2373,6 +2373,9 @@ img {
 					<a href="_scheduler_utils_clone_manager_d_.clonebase.html#cloneref" class="tsd-kind-icon">clone<wbr>Ref</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
+					<a href="_scheduler_utils_clone_manager_d_.clonebase.html#currentcell" class="tsd-kind-icon">current<wbr>Cell</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class">
 					<a href="_scheduler_utils_clone_manager_d_.clonebase.html#direction" class="tsd-kind-icon">direction</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -2439,6 +2442,9 @@ img {
 					<a href="_scheduler_utils_clone_manager_d_.clonebase.html#performautoscrolling" class="tsd-kind-icon">perform<wbr>Auto<wbr>Scrolling</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="_scheduler_utils_clone_manager_d_.clonebase.html#setcursorclass" class="tsd-kind-icon">set<wbr>Cursor<wbr>Class</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_scheduler_utils_clone_manager_d_.clonebase.html#suppressevent" class="tsd-kind-icon">suppress<wbr>Event</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2467,6 +2473,7 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#cellwidth" class="tsd-kind-icon">cell<wbr>Width</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#cloneref" class="tsd-kind-icon">clone<wbr>Ref</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#currentcell" class="tsd-kind-icon">current<wbr>Cell</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#direction" class="tsd-kind-icon">direction</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#enablescroll" class="tsd-kind-icon">enable<wbr>Scroll</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#eventsettings" class="tsd-kind-icon">event<wbr>Settings</a></li>
@@ -2494,6 +2501,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#getcurrenttargetdate" class="tsd-kind-icon">get<wbr>Current<wbr>Target<wbr>Date</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#getpointercoordinates" class="tsd-kind-icon">get<wbr>Pointer<wbr>Coordinates</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#performautoscrolling" class="tsd-kind-icon">perform<wbr>Auto<wbr>Scrolling</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#setcursorclass" class="tsd-kind-icon">set<wbr>Cursor<wbr>Class</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#suppressevent" class="tsd-kind-icon">suppress<wbr>Event</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scheduler_utils_clone_manager_d_.clonebase.html#updatedatasource" class="tsd-kind-icon">update<wbr>Datasource</a></li>
 						</ul>
@@ -2520,6 +2528,16 @@ img {
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in src/scheduler/utils/clone-manager.d.ts:13</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<a name="currentcell" class="tsd-anchor"></a>
+				<h3>current<wbr>Cell</h3>
+				<div class="tsd-signature tsd-kind-icon">current<wbr>Cell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/utils/clone-manager.d.ts:19</li>
 					</ul>
 				</aside>
 			</section>
@@ -2569,7 +2587,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Cell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/utils/clone-manager.d.ts:26</li>
+						<li>Defined in src/scheduler/utils/clone-manager.d.ts:27</li>
 					</ul>
 				</aside>
 			</section>
@@ -2691,7 +2709,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:31</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:32</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2702,19 +2720,22 @@ img {
 				<a name="clonefromsource" class="tsd-anchor"></a>
 				<h3>clone<wbr>From<wbr>Source</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">clone<wbr>From<wbr>Source<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
+					<li class="tsd-signature tsd-kind-icon">clone<wbr>From<wbr>Source<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, eventDrag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventdragprops.html" class="tsd-signature-type">EventDragProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:29</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:30</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>source: <span class="tsd-signature-type">HTMLElement</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> eventDrag: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventdragprops.html" class="tsd-signature-type">EventDragProps</a></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
@@ -2731,7 +2752,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:28</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:29</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2754,7 +2775,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:27</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:28</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2777,7 +2798,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:24</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:25</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2800,7 +2821,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:25</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:26</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2826,7 +2847,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:20</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:21</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2857,7 +2878,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:19</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:20</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2874,6 +2895,29 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="setcursorclass" class="tsd-anchor"></a>
+				<h3>set<wbr>Cursor<wbr>Class</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">set<wbr>Cursor<wbr>Class<span class="tsd-signature-symbol">(</span>cursorType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"move"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"notAllowed"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"default"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:34</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>cursorType: <span class="tsd-signature-type">"move"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"notAllowed"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"default"</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="suppressevent" class="tsd-anchor"></a>
 				<h3>suppress<wbr>Event</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -2883,7 +2927,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:30</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:31</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2906,7 +2950,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/clone-manager.d.ts:32</li>
+								<li>Defined in src/scheduler/utils/clone-manager.d.ts:33</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
