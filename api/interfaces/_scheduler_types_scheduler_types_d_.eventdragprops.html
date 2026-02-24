@@ -2396,7 +2396,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Provides granular configuration for the Scheduler event drag-and-drop behavior.</p>
+					<p>Provides granular configuration for the Scheduler event drag-and-drop behavior.
+						Enables fine-tuned control over event movement, including snapping intervals, scroll behavior,
+					auto-navigation to adjacent date ranges, and external drag-and-drop capabilities.</p>
 				</div>
 			</div>
 		</section>
@@ -2431,17 +2433,23 @@ img {
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="enable" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> enable</h3>
+				<h3>enable</h3>
 				<div class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:935</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1087</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables event dragging. Default true.</p>
+						<p>Enables or disables event dragging functionality.
+						When disabled, events cannot be moved by users but remain fully interactive for other operations.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>true</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2450,13 +2458,21 @@ img {
 				<div class="tsd-signature tsd-kind-icon">event<wbr>Drag<wbr>Area<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:947</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1132</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>CSS selector that restricts where events can be dragged. When set, dragging is constrained within the specified area.</p>
+						<p>CSS selector that restricts the draggable area for events.
+							When set, event dragging is constrained to elements matching this selector.
+							For example, &#39;.scheduler-container&#39; would restrict dragging within that container.
+						Set to null or undefined to allow unrestricted dragging.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>null (unrestricted)</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2465,13 +2481,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">exclude<wbr>Selectors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:939</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1103</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Comma-separated CSS selectors that are excluded as drop targets.</p>
+						<p>Comma-separated CSS selectors that are excluded as valid drop targets.
+							Elements matching these selectors will not accept dropped events.
+						Example: &#39;.read-only-cell, .blocked-time&#39;</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>&#39;&#39; (no exclusions)</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2480,13 +2503,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">external<wbr>Drag<wbr>And<wbr>Drop<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:945</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1123</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables external drag-and-drop using native HTML5 drag and drop.</p>
+						<p>Enables external drag-and-drop using native HTML5 drag and drop API.
+							When enabled, allows dragging events from outside the scheduler or to external targets.
+						Useful for integration with other draggable elements on the page.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2495,13 +2525,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:937</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1095</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Drag snapping interval in minutes. Defaults to timeScale interval/slotCount or 30.</p>
+						<p>Specifies the snapping interval in minutes for drag operations.
+							Events will align to time slots based on this interval (e.g., 15 for 15-minute increments).
+						When not specified, defaults to (timeScale interval / slotCount) or 30 minutes as fallback.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>Derived from timeScale configuration</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2510,12 +2547,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">navigation<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.navigateprops.html" class="tsd-signature-type">NavigateProps</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:943</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1115</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controls auto navigation to previous/next ranges when the pointer is held at extremes.</p>
+						<p>Configures automatic navigation to previous/next date ranges when the user holds
+						the pointer at extreme edges during dragging. Enables seamless dragging across weeks or months.</p>
 					</div>
 				</div>
 			</section>
@@ -2525,12 +2563,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">scroll<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.scrollprops.html" class="tsd-signature-type">ScrollProps</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:941</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1109</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controls auto-scroll while dragging near edges.</p>
+						<p>Configures auto-scroll behavior when dragging events near the scheduler viewport edges.
+						Ensures users can drag events beyond the currently visible time range.</p>
 					</div>
 				</div>
 			</section>

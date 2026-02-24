@@ -2384,7 +2384,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Controls auto-scroll while dragging.</p>
+					<p>Configures automatic scrolling behavior when dragging or resizing events near viewport edges.
+						Provides smooth scrolling as users move events or resize handles toward the scheduler boundaries,
+					enabling seamless operations across larger time ranges or date spans.</p>
 				</div>
 			</div>
 		</section>
@@ -2419,13 +2421,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:959</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1170</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Toggles auto-scroll. Default true.</p>
+						<p>Enables or disables auto-scrolling when dragging or resizing near edges.
+							When disabled, the viewport remains static and does not scroll during drag operations.
+						Useful for smaller time ranges where scrolling is not necessary.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>true</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2434,13 +2443,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">scroll<wbr>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:961</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1178</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Pixels per tick to scroll. Default 10.</p>
+						<p>Specifies the number of pixels to scroll per scroll step/tick.
+							Larger values increase scroll speed; smaller values provide finer control.
+						Typical range: 5-20 pixels per step for balanced responsiveness.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>10</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2449,13 +2465,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">time<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:963</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1186</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Delay in ms between scroll steps. Default 100.</p>
+						<p>Specifies the delay in milliseconds between consecutive scroll steps.
+							Shorter delays result in faster scrolling; longer delays in slower, more controlled scrolling.
+						Typical range: 50-200ms for smooth visual feedback.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>100</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 		</section>

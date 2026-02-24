@@ -2378,6 +2378,12 @@ img {
 		<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 			<a href="_scheduler_utils_actions_d_.html#getselectedevents" class="tsd-kind-icon">get<wbr>Selected<wbr>Events</a>
 		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_actions_d_.html#scrolltohour" class="tsd-kind-icon">scroll<wbr>ToHour</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_actions_d_.html#scrolltoworkhour" class="tsd-kind-icon">scroll<wbr>ToWork<wbr>Hour</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
@@ -2394,6 +2400,8 @@ img {
 							<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_scheduler_utils_actions_d_.html#getcelldetails" class="tsd-kind-icon">get<wbr>Cell<wbr>Details</a></li>
 							<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_scheduler_utils_actions_d_.html#getcellfromindex" class="tsd-kind-icon">get<wbr>Cell<wbr>From<wbr>Index</a></li>
 							<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_scheduler_utils_actions_d_.html#getselectedevents" class="tsd-kind-icon">get<wbr>Selected<wbr>Events</a></li>
+							<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_scheduler_utils_actions_d_.html#scrolltohour" class="tsd-kind-icon">scroll<wbr>ToHour</a></li>
+							<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_scheduler_utils_actions_d_.html#scrolltoworkhour" class="tsd-kind-icon">scroll<wbr>ToWork<wbr>Hour</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2407,7 +2415,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">clear<wbr>And<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/utils/actions.d.ts:2</li>
+						<li>Defined in src/scheduler/utils/actions.d.ts:3</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2438,7 +2446,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">clear<wbr>And<wbr>Select<wbr>Appointment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/utils/actions.d.ts:4</li>
+						<li>Defined in src/scheduler/utils/actions.d.ts:5</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2469,7 +2477,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Cell<wbr>Details<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span>, timeScale<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">; </span>endTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">; </span>isAllDay<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>startTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/utils/actions.d.ts:6</li>
+						<li>Defined in src/scheduler/utils/actions.d.ts:7</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2503,7 +2511,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Cell<wbr>From<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>root<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, rowIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, colIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/utils/actions.d.ts:3</li>
+						<li>Defined in src/scheduler/utils/actions.d.ts:4</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2540,7 +2548,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Selected<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>eventsData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, schedulerElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulereventclickevent.html" class="tsd-signature-type">SchedulerEventClickEvent</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/utils/actions.d.ts:5</li>
+						<li>Defined in src/scheduler/utils/actions.d.ts:6</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2562,6 +2570,77 @@ img {
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulereventclickevent.html" class="tsd-signature-type">SchedulerEventClickEvent</a></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+				<a name="scrolltohour" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> scroll<wbr>ToHour</h3>
+				<div class="tsd-signature tsd-kind-icon">scroll<wbr>ToHour<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>hour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, date<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, schedulerElementRef<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/utils/actions.d.ts:14</li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-siganture">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>hour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, date<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, schedulerElementRef<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>hour: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> date: <span class="tsd-signature-type">Date</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> schedulerElementRef: <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+				<a name="scrolltoworkhour" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagConst">Const</span> scroll<wbr>ToWork<wbr>Hour</h3>
+				<div class="tsd-signature tsd-kind-icon">scroll<wbr>ToWork<wbr>Hour<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>scrollTo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.scrolltoprops.html" class="tsd-signature-type">ScrollToProps</a>, schedulerElementRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/utils/actions.d.ts:13</li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-siganture">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>scrollTo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.scrolltoprops.html" class="tsd-signature-type">ScrollToProps</a>, schedulerElementRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>scrollTo: <a href="../interfaces/_scheduler_types_scheduler_types_d_.scrolltoprops.html" class="tsd-signature-type">ScrollToProps</a></h5>
+										</li>
+										<li>
+											<h5>schedulerElementRef: <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLDivElement</span><span class="tsd-signature-symbol">&gt;</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 								</li>
 							</ul>
 						</li>

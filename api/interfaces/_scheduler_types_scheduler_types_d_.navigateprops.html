@@ -2381,7 +2381,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Options for auto navigation while dragging.</p>
+					<p>Configures automatic navigation behavior when dragging events at viewport extremes.
+						When the user holds an event at the edge of the visible time range, the scheduler
+					automatically navigates to the next or previous time period to enable extended dragging.</p>
 				</div>
 			</div>
 		</section>
@@ -2415,13 +2417,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:952</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1147</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables auto navigation on drag hold at extremes. Default false.</p>
+						<p>Enables or disables auto-navigation when the user holds an event
+							at the extreme edges (top/bottom) of the visible viewport during dragging.
+						Requires a hold duration before navigation is triggered.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2430,13 +2439,20 @@ img {
 				<div class="tsd-signature tsd-kind-icon">time<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:954</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1155</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Hold delay in ms before navigation triggers. Default 2000.</p>
+						<p>Specifies the hold delay in milliseconds before auto-navigation is triggered.
+							A longer delay prevents accidental navigation from quick drag movements.
+						Recommended: 1000-3000ms for optimal user experience.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>2000</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 		</section>

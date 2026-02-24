@@ -2379,6 +2379,9 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#animation" class="tsd-kind-icon">animation</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#arrow" class="tsd-kind-icon">arrow</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#content" class="tsd-kind-icon">content</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2432,6 +2435,7 @@ img {
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#animation" class="tsd-kind-icon">animation</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#arrow" class="tsd-kind-icon">arrow</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#content" class="tsd-kind-icon">content</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#followcursor" class="tsd-kind-icon">follow<wbr>Cursor</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulertooltipprops.html#height" class="tsd-kind-icon">height</a></li>
@@ -2453,7 +2457,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1107</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1336</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2489,7 +2493,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Filter<wbr>Target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1116</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1345</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2534,7 +2538,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1101</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1330</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2573,7 +2577,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">animation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TooltipAnimationOptions</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1095</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1318</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2588,12 +2592,32 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="arrow" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> arrow</h3>
+				<div class="tsd-signature tsd-kind-icon">arrow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1324</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Shows or hides the tip pointer of Tooltip.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="content" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> content</h3>
 				<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1049</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1272</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2613,7 +2637,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">follow<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1076</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1299</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2633,7 +2657,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1043</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1266</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2653,7 +2677,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1089</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1312</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2674,7 +2698,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">opens<wbr>On<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1070</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1293</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2700,7 +2724,7 @@ Custom :- The Tooltip opens when the trigger element is triggered by a custom ev
 				<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Position</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1055</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1278</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2720,7 +2744,7 @@ Custom :- The Tooltip opens when the trigger element is triggered by a custom ev
 				<div class="tsd-signature tsd-kind-icon">sticky<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1082</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1305</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2740,7 +2764,7 @@ Custom :- The Tooltip opens when the trigger element is triggered by a custom ev
 				<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1037</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1260</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
