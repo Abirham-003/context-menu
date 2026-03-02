@@ -2381,6 +2381,13 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Specifies the configuration for automatically scrolling the Scheduler when the view is initialized or rendered.</p>
+				</div>
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
@@ -2412,12 +2419,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1648</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1652</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> Enables automatic scroll when the view renders.</p>
+						<p>Specifies whether automatic scrolling should occur when the view is rendered.
+						If omitted or set to <code>false</code>, the Scheduler does not perform any automatic scroll.</p>
 					</div>
 				</div>
 			</section>
@@ -2427,12 +2435,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/_scheduler_types_enums_d_.scrolltomode.html" class="tsd-signature-type">ScrollToMode</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1656</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1662</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Determines how the view should automatically scroll to the mode when rendered.</p>
+						<p>Specifies the scrolling strategy used to determine the target scroll position.</p>
 					</div>
 				</div>
 			</section>
@@ -2442,12 +2450,14 @@ img {
 				<div class="tsd-signature tsd-kind-icon">offset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1652</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1658</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p> Pixel offset applied to the computed target position (can be negative).</p>
+						<p>Specifies a pixel value that is subtracted from the calculated scroll position.
+							This value represents the exact amount reduced from the final scroll target.
+						Accepts positive or negative values to fine‑tune the final scroll target.</p>
 					</div>
 				</div>
 			</section>

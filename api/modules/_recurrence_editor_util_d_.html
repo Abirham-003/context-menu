@@ -2376,6 +2376,9 @@ img {
 			<a href="_recurrence_editor_util_d_.html#getbysetposfromdate" class="tsd-kind-icon">get<wbr>BySet<wbr>Pos<wbr>From<wbr>Date</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_recurrence_editor_util_d_.html#getdefaultrule" class="tsd-kind-icon">get<wbr>Default<wbr>Rule</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="_recurrence_editor_util_d_.html#getrecurrencestatefromrule" class="tsd-kind-icon">get<wbr>Recurrence<wbr>State<wbr>From<wbr>Rule</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -2401,6 +2404,7 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_util_d_.html#getbydayfromdate" class="tsd-kind-icon">get<wbr>ByDay<wbr>From<wbr>Date</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_util_d_.html#getbysetposfromdate" class="tsd-kind-icon">get<wbr>BySet<wbr>Pos<wbr>From<wbr>Date</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_util_d_.html#getdefaultrule" class="tsd-kind-icon">get<wbr>Default<wbr>Rule</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_util_d_.html#getrecurrencestatefromrule" class="tsd-kind-icon">get<wbr>Recurrence<wbr>State<wbr>From<wbr>Rule</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_util_d_.html#getrecurrencestringfromdate" class="tsd-kind-icon">get<wbr>Recurrence<wbr>String<wbr>From<wbr>Date</a></li>
 						</ul>
@@ -2416,7 +2420,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Day<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>locale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, calendarMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, firstDayOfWeek<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, format<span class="tsd-signature-symbol">: </span><a href="_recurrence_editor_types_d_.html#dayformattype" class="tsd-signature-type">DayFormatType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_recurrence_editor_types_d_.recurrenceitems.html" class="tsd-signature-type">RecurrenceItems</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/util.d.ts:17</li>
+						<li>Defined in src/recurrence-editor/util.d.ts:27</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2456,7 +2460,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Month<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>locale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, calendarMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_recurrence_editor_types_d_.html#dropdowndata" class="tsd-signature-type">DropdownData</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/util.d.ts:16</li>
+						<li>Defined in src/recurrence-editor/util.d.ts:26</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2497,7 +2501,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/util.d.ts:7</li>
+								<li>Defined in src/recurrence-editor/util.d.ts:16</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2529,7 +2533,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/util.d.ts:15</li>
+								<li>Defined in src/recurrence-editor/util.d.ts:25</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2554,6 +2558,44 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="getdefaultrule" class="tsd-anchor"></a>
+				<h3>get<wbr>Default<wbr>Rule</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Rule<span class="tsd-signature-symbol">(</span>freq<span class="tsd-signature-symbol">: </span><a href="_recurrence_editor_types_d_.html#freqtype" class="tsd-signature-type">FreqType</a>, date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/recurrence-editor/util.d.ts:9</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Generates a default iCalendar recurrence rule (RFC 5545) string for a given frequency and reference date.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>freq: <a href="_recurrence_editor_types_d_.html#freqtype" class="tsd-signature-type">FreqType</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Recurrence frequency.</p>
+								</div>
+							</li>
+							<li>
+								<h5>date: <span class="tsd-signature-type">Date</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Reference <code>Date</code> used to derive day/month parts. If falsy or invalid, the current date is used.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						<p>A recurrence rule string (for example: &#39;FREQ=WEEKLY;INTERVAL=1;BYDAY=MO;&#39;).</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 				<a name="getrecurrencestatefromrule" class="tsd-anchor"></a>
 				<h3>get<wbr>Recurrence<wbr>State<wbr>From<wbr>Rule</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -2563,7 +2605,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/util.d.ts:24</li>
+								<li>Defined in src/recurrence-editor/util.d.ts:35</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2601,7 +2643,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/util.d.ts:31</li>
+								<li>Defined in src/recurrence-editor/util.d.ts:42</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
