@@ -2364,13 +2364,13 @@ img {
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+			<a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-kind-icon">Alert<wbr>Action</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 			<a href="../enums/_scheduler_types_enums_d_.alerttype.html" class="tsd-kind-icon">Alert<wbr>Type</a>
 		</li>
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
 			<a href="../enums/_scheduler_types_enums_d_.direction.html" class="tsd-kind-icon">Direction</a>
-		</li>
-		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-			<a href="../enums/_scheduler_types_enums_d_.scrolltomode.html" class="tsd-kind-icon">Scroll<wbr>ToMode</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 			<a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-kind-icon">Crud<wbr>Action</a>
@@ -2398,9 +2398,9 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Enumerations</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-kind-icon">Alert<wbr>Action</a></li>
 							<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_scheduler_types_enums_d_.alerttype.html" class="tsd-kind-icon">Alert<wbr>Type</a></li>
 							<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-private"><a href="../enums/_scheduler_types_enums_d_.direction.html" class="tsd-kind-icon">Direction</a></li>
-							<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_scheduler_types_enums_d_.scrolltomode.html" class="tsd-kind-icon">Scroll<wbr>ToMode</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -2421,18 +2421,26 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 				<a name="crudaction" class="tsd-anchor"></a>
 				<h3>Crud<wbr>Action</h3>
-				<div class="tsd-signature tsd-kind-icon">Crud<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Add"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Edit"</span></div>
+				<div class="tsd-signature tsd-kind-icon">Crud<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Add"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditCurrentSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Delete"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditFollowingEvents"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteFollowingEvents"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:28</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:36</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An enum that represents the action performed when opening the editor.</p>
+						<p>A type representing the action performed when opening the editor.</p>
 					</div>
-					<p>Add: Opens the editor to create a new event.
-					Edit: Opens the editor to modify an existing event.</p>
+					<p>&#39;Add&#39;: Opens the editor to create a new event.
+						&#39;Edit&#39;: Opens the editor to modify an existing event.
+						&#39;EditSeries&#39;: Opens the editor to modify an entire recurring event series.
+						&#39;EditCurrentSeries&#39;: Opens the editor to modify the current occurrences of a recurring event.
+						&#39;EditOccurrence&#39;: Opens the editor to modify a specific occurrence of a recurring event.
+						&#39;Delete&#39;: Opens a editor to delete a specific occurrence of a recurring event.
+						&#39;DeleteOccurrence&#39;: Opens a confirmation dialog to delete a specific occurrence of a recurring event.
+						&#39;DeleteSeries&#39;: Opens a confirmation dialog to delete an entire recurring event series.
+						&#39;EditFollowingEvents&#39;: Opens the editor to modify the current and following occurrences of a recurring event.
+					&#39;DeleteFollowingEvents&#39;: Opens a confirmation dialog to delete the current and following occurrences of a recurring event.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -2441,7 +2449,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Editor<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Cell"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Event"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:35</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:43</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

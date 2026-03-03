@@ -2370,10 +2370,25 @@ img {
 			<a href="_scheduler_utils_event_base_d_.html#expandrecurringevents" class="tsd-kind-icon">expand<wbr>Recurring<wbr>Events</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_event_base_d_.html#getrecurrencemaxid" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Max<wbr>Id</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_event_base_d_.html#getrecurrenceparent" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Parent</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="_scheduler_utils_event_base_d_.html#populateeventfields" class="tsd-kind-icon">populate<wbr>Event<wbr>Fields</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_event_base_d_.html#showalertdialog" class="tsd-kind-icon">show<wbr>Alert<wbr>Dialog</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_event_base_d_.html#showrecurrencealert" class="tsd-kind-icon">show<wbr>Recurrence<wbr>Alert</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="_scheduler_utils_event_base_d_.html#updatedatasource" class="tsd-kind-icon">update<wbr>Datasource</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_scheduler_utils_event_base_d_.html#updateparentrecurrenceevent" class="tsd-kind-icon">update<wbr>Parent<wbr>Recurrence<wbr>Event</a>
 		</li>
 	</ul>
 </nav>
@@ -2388,8 +2403,13 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#editoccurrencevalidation" class="tsd-kind-icon">edit<wbr>Occurrence<wbr>Validation</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#expandrecurringevents" class="tsd-kind-icon">expand<wbr>Recurring<wbr>Events</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#getrecurrencemaxid" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Max<wbr>Id</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#getrecurrenceparent" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Parent</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#populateeventfields" class="tsd-kind-icon">populate<wbr>Event<wbr>Fields</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#showalertdialog" class="tsd-kind-icon">show<wbr>Alert<wbr>Dialog</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#showrecurrencealert" class="tsd-kind-icon">show<wbr>Recurrence<wbr>Alert</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#updatedatasource" class="tsd-kind-icon">update<wbr>Datasource</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scheduler_utils_event_base_d_.html#updateparentrecurrenceevent" class="tsd-kind-icon">update<wbr>Parent<wbr>Recurrence<wbr>Event</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2401,13 +2421,13 @@ img {
 				<a name="editoccurrencevalidation" class="tsd-anchor"></a>
 				<h3>edit<wbr>Occurrence<wbr>Validation</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">edit<wbr>Occurrence<wbr>Validation<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, newStartTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, eventsProcessed<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, eventsData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>messageKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>shouldAlert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></li>
+					<li class="tsd-signature tsd-kind-icon">edit<wbr>Occurrence<wbr>Validation<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, newStartTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, newEndTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, eventsProcessed<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, eventsData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.html#alertdialog" class="tsd-signature-type">AlertDialog</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/event-base.d.ts:20</li>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:24</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2430,6 +2450,12 @@ img {
 								</div>
 							</li>
 							<li>
+								<h5>newEndTime: <span class="tsd-signature-type">Date</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The new end time for the event</p>
+								</div>
+							</li>
+							<li>
 								<h5>eventsProcessed: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>The processed events array</p>
@@ -2441,21 +2467,16 @@ img {
 									<p>The original events data</p>
 								</div>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> fields: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The event field mapping</p>
+								</div>
+							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isValid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>messageKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>shouldAlert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="_scheduler_types_internal_interface_d_.html#alertdialog" class="tsd-signature-type">AlertDialog</a></h4>
 						<ul>
 							<li>Validation result with isValid, shouldAlert, and optional messageKey</li>
-						</ul>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>is<wbr>Valid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> message<wbr>Key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>should<wbr>Alert<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-							</li>
 						</ul>
 					</li>
 				</ul>
@@ -2470,7 +2491,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/event-base.d.ts:10</li>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:12</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2501,6 +2522,92 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="getrecurrencemaxid" class="tsd-anchor"></a>
+				<h3>get<wbr>Recurrence<wbr>Max<wbr>Id</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Recurrence<wbr>Max<wbr>Id<span class="tsd-signature-symbol">(</span>eventsData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:41</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Validates whether a recurring event can be dragged to a new start time</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>eventsData: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The processed events array</p>
+								</div>
+							</li>
+							<li>
+								<h5>fields: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The event field mapping</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						<ul>
+							<li>Returns parent event</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="getrecurrenceparent" class="tsd-anchor"></a>
+				<h3>get<wbr>Recurrence<wbr>Parent</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Recurrence<wbr>Parent<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, eventsProcessed<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:33</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Validates whether a recurring event can be dragged to a new start time</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>original: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The event being dragged</p>
+								</div>
+							</li>
+							<li>
+								<h5>eventsProcessed: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The processed events array</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> fields: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The event field mapping</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						<ul>
+							<li>Returns parent event</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 				<a name="populateeventfields" class="tsd-anchor"></a>
 				<h3>populate<wbr>Event<wbr>Fields</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -2510,7 +2617,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/event-base.d.ts:49</li>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:74</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2556,16 +2663,267 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="updatedatasource" class="tsd-anchor"></a>
-				<h3>update<wbr>Datasource</h3>
+				<a name="showalertdialog" class="tsd-anchor"></a>
+				<h3>show<wbr>Alert<wbr>Dialog</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">update<wbr>Datasource<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, newStartTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, newEndTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_scheduler_scheduler_d_.ischeduler.html" class="tsd-signature-type">IScheduler</a><span class="tsd-signature-symbol">&gt;</span>, fields<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a>, eventsData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, eventsProcessed<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></li>
+					<li class="tsd-signature tsd-kind-icon">show<wbr>Alert<wbr>Dialog<span class="tsd-signature-symbol">(</span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, confirmText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, confirmationDialog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>hide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>show<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>confirmText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>onConfirm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>showCancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/utils/event-base.d.ts:37</li>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:86</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Handles recurrence deletion based on occurrence or series selection</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>title: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The title of the alert dialog</p>
+								</div>
+							</li>
+							<li>
+								<h5>message: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The message to display in the alert dialog</p>
+								</div>
+							</li>
+							<li>
+								<h5>confirmText: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The text for the confirm button in the alert dialog</p>
+								</div>
+							</li>
+							<li>
+								<h5>confirmationDialog: <span class="tsd-signature-symbol">{ </span>hide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>show<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>confirmText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>onConfirm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>showCancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>An optional confirmation dialog instance with show and hide methods</p>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>hide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Method to hide the confirmation dialog</p>
+										</div>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter-siganture">
+												<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												</ul>
+												<ul class="tsd-descriptions">
+													<li class="tsd-description">
+														<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5>show<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>confirmText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>onConfirm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>showCancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Method to display the confirmation dialog</p>
+										</div>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter-siganture">
+												<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>confirmText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>onConfirm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>showCancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												</ul>
+												<ul class="tsd-descriptions">
+													<li class="tsd-description">
+														<h4 class="tsd-parameters-title">Parameters</h4>
+														<ul class="tsd-parameters">
+															<li>
+																<h5>options: <span class="tsd-signature-symbol">{ </span>confirmText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>onConfirm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>showCancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+																<ul class="tsd-parameters">
+																	<li class="tsd-parameter">
+																		<h5>confirm<wbr>Text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+																	</li>
+																	<li class="tsd-parameter">
+																		<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+																	</li>
+																	<li class="tsd-parameter">
+																		<h5>on<wbr>Confirm<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+																		<ul class="tsd-parameters">
+																			<li class="tsd-parameter-siganture">
+																				<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+																					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+																				</ul>
+																				<ul class="tsd-descriptions">
+																					<li class="tsd-description">
+																						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+																					</li>
+																				</ul>
+																			</li>
+																		</ul>
+																	</li>
+																	<li class="tsd-parameter">
+																		<h5>show<wbr>Cancel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+																	</li>
+																	<li class="tsd-parameter">
+																		<h5>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="showrecurrencealert" class="tsd-anchor"></a>
+				<h3>show<wbr>Recurrence<wbr>Alert</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">show<wbr>Recurrence<wbr>Alert<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a>, confirmationDialog<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>hide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>show<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span>, getString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span>, onSelect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:107</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Shows a recurrence alert dialog (edit, delete, or series change) based on the action type</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action type: &#39;recurrenceEdit&#39;, &#39;recurrenceDelete&#39;, or &#39;seriesChange&#39;</p>
+								</div>
+							</li>
+							<li>
+								<h5>confirmationDialog: <span class="tsd-signature-symbol">{ </span>hide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>show<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> }</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The confirmation dialog instance with show and hide methods</p>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>hide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Method to hide the confirmation dialog</p>
+										</div>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter-siganture">
+												<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												</ul>
+												<ul class="tsd-descriptions">
+													<li class="tsd-description">
+														<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5>show<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Method to display the confirmation dialog</p>
+										</div>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter-siganture">
+												<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+													<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												</ul>
+												<ul class="tsd-descriptions">
+													<li class="tsd-description">
+														<h4 class="tsd-parameters-title">Parameters</h4>
+														<ul class="tsd-parameters">
+															<li>
+																<h5>options: <span class="tsd-signature-type">any</span></h5>
+															</li>
+														</ul>
+														<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h5>getString: <span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Function to get localized strings</p>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-siganture">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>key: <span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h5>onSelect: <span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Callback when user selects an option</p>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-siganture">
+										<ul class="tsd-signatures tsd-kind-type-literal">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>selectOption: <a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="updatedatasource" class="tsd-anchor"></a>
+				<h3>update<wbr>Datasource</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">update<wbr>Datasource<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, newStartTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, newEndTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_scheduler_scheduler_d_.ischeduler.html" class="tsd-signature-type">IScheduler</a><span class="tsd-signature-symbol">&gt;</span>, fields<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a>, eventsData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:53</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2611,6 +2969,46 @@ img {
 									<p>The events data array</p>
 								</div>
 							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></h4>
+						<ul>
+							<li>The updated event</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="updateparentrecurrenceevent" class="tsd-anchor"></a>
+				<h3>update<wbr>Parent<wbr>Recurrence<wbr>Event</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">update<wbr>Parent<wbr>Recurrence<wbr>Event<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, fields<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a>, eventsProcessed<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/utils/event-base.d.ts:62</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Updates the datasource with a modified event, handling recurrence rules</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>original: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The original event</p>
+								</div>
+							</li>
+							<li>
+								<h5>fields: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The event field mapping</p>
+								</div>
+							</li>
 							<li>
 								<h5>eventsProcessed: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
 								<div class="tsd-comment tsd-typography">
@@ -2620,7 +3018,7 @@ img {
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></h4>
 						<ul>
-							<li>The updated event</li>
+							<li>Returns the updated parent event</li>
 						</ul>
 					</li>
 				</ul>

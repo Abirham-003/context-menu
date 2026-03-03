@@ -2397,7 +2397,7 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-private">
 				<a name="useeditorpopup" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagConst">Const</span> use<wbr>Editor<wbr>Popup</h3>
-				<div class="tsd-signature tsd-kind-icon">use<wbr>Editor<wbr>Popup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>onCellDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulercellclickevent.html" class="tsd-signature-type">SchedulerCellClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, onEventDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulereventclickevent.html" class="tsd-signature-type">SchedulerEventClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, closeAllPopups<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_scheduler_hooks_useeditorpopup_d_.useeditorpopupresult.html" class="tsd-signature-type">UseEditorPopupResult</a></div>
+				<div class="tsd-signature tsd-kind-icon">use<wbr>Editor<wbr>Popup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>onCellDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulercellclickevent.html" class="tsd-signature-type">SchedulerCellClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, onEventDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulereventclickevent.html" class="tsd-signature-type">SchedulerEventClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, closeAllPopups<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, showRecurrenceAlert<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a>, onSelect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, eventsProcessed<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_scheduler_hooks_useeditorpopup_d_.useeditorpopupresult.html" class="tsd-signature-type">UseEditorPopupResult</a></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in src/scheduler/hooks/useEditorPopup.d.ts:63</li>
@@ -2419,6 +2419,12 @@ img {
 						<dt>param</dt>
 						<dd><p>Callback to close other popups when opening the editor.</p>
 						</dd>
+						<dt>param</dt>
+						<dd><p>Callback to show recurrence alert options.</p>
+						</dd>
+						<dt>param</dt>
+						<dd><p>Array of processed events for recurrence rule calculation.</p>
+						</dd>
 						<dt>returns</dt>
 						<dd><p>API with current state and handlers to control the editor popup.</p>
 						</dd>
@@ -2429,7 +2435,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>onCellDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulercellclickevent.html" class="tsd-signature-type">SchedulerCellClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, onEventDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulereventclickevent.html" class="tsd-signature-type">SchedulerEventClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, closeAllPopups<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_hooks_useeditorpopup_d_.useeditorpopupresult.html" class="tsd-signature-type">UseEditorPopupResult</a></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>onCellDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulercellclickevent.html" class="tsd-signature-type">SchedulerCellClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, onEventDoubleClick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulereventclickevent.html" class="tsd-signature-type">SchedulerEventClickEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, closeAllPopups<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, showRecurrenceAlert<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a>, onSelect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, eventsProcessed<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_hooks_useeditorpopup_d_.useeditorpopupresult.html" class="tsd-signature-type">UseEditorPopupResult</a></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2491,6 +2497,51 @@ img {
 													</ul>
 												</li>
 											</ul>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> showRecurrenceAlert: <span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a>, onSelect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+											<ul class="tsd-parameters">
+												<li class="tsd-parameter-siganture">
+													<ul class="tsd-signatures tsd-kind-type-literal">
+														<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a>, onSelect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+													</ul>
+													<ul class="tsd-descriptions">
+														<li class="tsd-description">
+															<h4 class="tsd-parameters-title">Parameters</h4>
+															<ul class="tsd-parameters">
+																<li>
+																	<h5>action: <a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a></h5>
+																</li>
+																<li>
+																	<h5>onSelect: <span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+																	<ul class="tsd-parameters">
+																		<li class="tsd-parameter-siganture">
+																			<ul class="tsd-signatures tsd-kind-type-literal">
+																				<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+																			</ul>
+																			<ul class="tsd-descriptions">
+																				<li class="tsd-description">
+																					<h4 class="tsd-parameters-title">Parameters</h4>
+																					<ul class="tsd-parameters">
+																						<li>
+																							<h5>selectOption: <a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a></h5>
+																						</li>
+																					</ul>
+																					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+															<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> eventsProcessed: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_hooks_useeditorpopup_d_.useeditorpopupresult.html" class="tsd-signature-type">UseEditorPopupResult</a></h4>

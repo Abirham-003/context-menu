@@ -2367,6 +2367,9 @@ img {
 			<a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html" class="tsd-kind-icon">Confirmation<wbr>Dialog<wbr>State</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html#action" class="tsd-kind-icon">action</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html#confirmtext" class="tsd-kind-icon">confirm<wbr>Text</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2408,6 +2411,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html#action" class="tsd-kind-icon">action</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html#confirmtext" class="tsd-kind-icon">confirm<wbr>Text</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html#message" class="tsd-kind-icon">message</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useconfirmationdialog_d_.confirmationdialogstate.html#onconfirm" class="tsd-kind-icon">on<wbr>Confirm</a></li>
@@ -2422,12 +2426,22 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="action" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> action</h3>
+				<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-signature-type">AlertAction</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:8</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="confirmtext" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> confirm<wbr>Text</h3>
 				<div class="tsd-signature tsd-kind-icon">confirm<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:5</li>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:6</li>
 					</ul>
 				</aside>
 			</section>
@@ -2437,17 +2451,17 @@ img {
 				<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:4</li>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:5</li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="onconfirm" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Confirm</h3>
-				<div class="tsd-signature tsd-kind-icon">on<wbr>Confirm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Confirm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">?: </span><a href="../modules/_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:7</li>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:9</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2455,10 +2469,16 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>selectOption<span class="tsd-signature-symbol">?: </span><a href="../modules/_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> selectOption: <a href="../modules/_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a></h5>
+										</li>
+									</ul>
 									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 								</li>
 							</ul>
@@ -2472,7 +2492,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">show<wbr>Cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:6</li>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:7</li>
 					</ul>
 				</aside>
 			</section>
@@ -2482,7 +2502,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:3</li>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:4</li>
 					</ul>
 				</aside>
 			</section>
@@ -2492,7 +2512,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:2</li>
+						<li>Defined in src/scheduler/hooks/useConfirmationDialog.d.ts:3</li>
 					</ul>
 				</aside>
 			</section>
