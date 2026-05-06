@@ -2379,9 +2379,6 @@ img {
 					<a href="_scheduler_services_timezone_d_.timezone.html#getcommontimezones" class="tsd-kind-icon">get<wbr>Common<wbr>Timezones</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a href="_scheduler_services_timezone_d_.timezone.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_timezone_d_.timezone.html#offset" class="tsd-kind-icon">offset</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -2402,21 +2399,6 @@ img {
 					<p>Timezone utility class for handling IANA timezone conversions and offsets.
 					All methods are static and work with UTC dates.</p>
 				</div>
-				<dl class="tsd-comment-tags">
-					<dt>remarks</dt>
-					<dd><ul>
-							<li>DST transitions are handled automatically by leveraging Intl.DateTimeFormat</li>
-							<li>Ambiguous times (DST fall-back) default to the earlier offset</li>
-							<li>Nonexistent times (DST spring-forward) are shifted to the next valid time</li>
-						</ul>
-					</dd>
-					<dt>example</dt>
-					<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">'2024-06-15T14:30:00Z'</span>); <span class="hljs-comment">// UTC</span>
-<span class="hljs-keyword">const</span> nyOffset = Timezone.offset(date, <span class="hljs-string">'America/New_York'</span>); <span class="hljs-comment">// -240 (EDT = UTC-4)</span>
-<span class="hljs-keyword">const</span> displayTime = Timezone.add(date, <span class="hljs-string">'America/New_York'</span>);
-<span class="hljs-keyword">const</span> backToUtc = Timezone.remove(displayTime, <span class="hljs-string">'America/New_York'</span>);</code></pre>
-					</dd>
-				</dl>
 			</div>
 		</section>
 		<section class="tsd-panel tsd-hierarchy">
@@ -2443,7 +2425,6 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#add" class="tsd-kind-icon">add</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#convert" class="tsd-kind-icon">convert</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#getcommontimezones" class="tsd-kind-icon">get<wbr>Common<wbr>Timezones</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#offset" class="tsd-kind-icon">offset</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#remove" class="tsd-kind-icon">remove</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#removelocaloffset" class="tsd-kind-icon">remove<wbr>Local<wbr>Offset</a></li>
@@ -2460,7 +2441,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">timezone<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/services/Timezone.d.ts:23</li>
+						<li>Defined in src/scheduler/services/Timezone.d.ts:10</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2482,7 +2463,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:59</li>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:28</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2490,18 +2471,6 @@ img {
 								<p>Convert a UTC date to the display wall-clock time in a target timezone.
 								Adds the timezone offset to shift UTC to local time in the target zone.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>remarks</dt>
-								<dd><p>The returned Date is still a UTC Date object, but represents the local time.
-										For example, if date is 2024-06-15T10:00:00Z and timezone is &#39;America/New_York&#39; (UTC-4),
-									the result will be a Date representing 2024-06-15T06:00:00Z (but conceptually 6:00 AM in NY).</p>
-								</dd>
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> utcDate = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">'2024-06-15T14:00:00Z'</span>);
-<span class="hljs-keyword">const</span> nyDisplay = Timezone.add(utcDate, <span class="hljs-string">'America/New_York'</span>);
-<span class="hljs-comment">// nyDisplay represents 2024-06-15T10:00:00Z (14:00 UTC → 10:00 EDT)</span></code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -2533,7 +2502,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:115</li>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:56</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2541,17 +2510,6 @@ img {
 								<p>Convert a wall-clock time from one timezone/offset to another.
 								Takes a date interpreted in the source timezone and converts it to target timezone.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>remarks</dt>
-								<dd><p>When ambiguous times occur (DST fall-back, time repeats), the earlier offset is used.
-									When nonexistent times occur (DST spring-forward, time skips), the date is shifted forward.</p>
-								</dd>
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> nyTime = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">'2024-06-15T14:00:00Z'</span>); <span class="hljs-comment">// 2:00 PM in NY</span>
-<span class="hljs-keyword">const</span> parisTime = Timezone.convert(nyTime, <span class="hljs-string">'America/New_York'</span>, <span class="hljs-string">'Europe/Paris'</span>);
-<span class="hljs-comment">// parisTime represents 8:00 PM in Paris</span></code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -2589,61 +2547,16 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:141</li>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:62</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Get a list of common IANA timezone identifiers for use in editor/UI selectors.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> zones = Timezone.getCommonTimezones();
-<span class="hljs-comment">// ['UTC', 'America/Anchorage', 'America/Chicago', ...]</span></code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></h4>
 						<p>Array of IANA timezone names sorted alphabetically</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-				<a name="isvalid" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagStatic">Static</span> is<wbr>Valid</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span>timezone<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:129</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Validate if a timezone string is a valid IANA timezone name or the special &#39;UTC&#39; value.</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript">Timezone.isValid(<span class="hljs-string">'America/New_York'</span>); <span class="hljs-comment">// true</span>
-Timezone.isValid(<span class="hljs-string">'Invalid/Zone'</span>); <span class="hljs-comment">// false</span>
-Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comment">// true</span></code></pre>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>timezone: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Timezone string to validate</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						<p>true if the timezone is valid, false otherwise</p>
 					</li>
 				</ul>
 			</section>
@@ -2657,7 +2570,7 @@ Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comm
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:38</li>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:19</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2665,12 +2578,6 @@ Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comm
 								<p>Get the UTC offset in minutes for a given date and timezone.
 								Accounts for DST active at that specific date.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">'2024-06-15T00:00:00Z'</span>); <span class="hljs-comment">// June (EDT)</span>
-<span class="hljs-keyword">const</span> offset = Timezone.offset(date, <span class="hljs-string">'America/New_York'</span>); <span class="hljs-comment">// -240 (UTC-4)</span></code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -2702,7 +2609,7 @@ Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comm
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:80</li>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:38</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2711,17 +2618,6 @@ Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comm
 									Interprets the input date as a local wall-clock in the given timezone
 								and converts it to the equivalent UTC instant.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>remarks</dt>
-								<dd><p>This is the inverse of <code>add()</code>. Use this when you have a wall-clock time
-									that you want to normalize to UTC for storage.</p>
-								</dd>
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> wallClock = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">'2024-06-15T10:00:00Z'</span>); <span class="hljs-comment">// Represents 10:00 AM in NY</span>
-<span class="hljs-keyword">const</span> utc = Timezone.remove(wallClock, <span class="hljs-string">'America/New_York'</span>);
-<span class="hljs-comment">// utc is 2024-06-15T14:00:00Z (10:00 EDT → 14:00 UTC)</span></code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -2753,7 +2649,7 @@ Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comm
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/Timezone.d.ts:94</li>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:46</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2761,12 +2657,6 @@ Timezone.isValid(<span class="hljs-string">'UTC'</span>); <span class="hljs-comm
 								<p>Remove the local runtime offset from a date.
 								Useful when Date objects are created in local time and need normalization to UTC.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-keyword">const</span> localDate = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(); <span class="hljs-comment">// Current local time</span>
-<span class="hljs-keyword">const</span> utcEquivalent = Timezone.removeLocalOffset(localDate);</code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
