@@ -2420,7 +2420,10 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Props for RecurrenceEditor component</p>
+					<p>Props for the top-level <code>RecurrenceEditor</code> component.
+						These props are intentionally minimal — the editor consumes an RRULE
+						string (<code>value</code>) and reports changes via <code>onChange</code> with a
+					<code>{ value: string }</code> payload to match the rest of the scheduling API.</p>
 				</div>
 			</div>
 		</section>
@@ -2458,12 +2461,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="../modules/_recurrence_editor_types_d_.html#endtype" class="tsd-signature-type">EndType</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/types.d.ts:26</li>
+						<li>Defined in src/recurrence-editor/types.d.ts:53</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>End type options (Never, Count, Until)</p>
+						<p>End type options (Never, Count, Until).</p>
 					</div>
 				</div>
 			</section>
@@ -2473,12 +2476,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">first<wbr>Day<wbr>OfWeek<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/types.d.ts:28</li>
+						<li>Defined in src/recurrence-editor/types.d.ts:55</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>First day of week index (0=Sunday, 1=Monday, etc.)</p>
+						<p>First day of week index (0=Sunday, 1=Monday, etc.). Defaults to 0.</p>
 					</div>
 				</div>
 			</section>
@@ -2488,12 +2491,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">frequencies<span class="tsd-signature-symbol">:</span> <a href="../modules/_recurrence_editor_types_d_.html#freqtype" class="tsd-signature-type">FreqType</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/types.d.ts:24</li>
+						<li>Defined in src/recurrence-editor/types.d.ts:51</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Array of frequency options for repeat mode dropdown</p>
+						<p>Array of frequency options for the repeat-mode dropdown (e.g. [&#39;DAILY&#39;,&#39;WEEKLY&#39;]).</p>
 					</div>
 				</div>
 			</section>
@@ -2503,12 +2506,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="_recurrence_editor_types_d_.recurrencechangeevent.html" class="tsd-signature-type">RecurrenceChangeEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/types.d.ts:32</li>
+						<li>Defined in src/recurrence-editor/types.d.ts:59</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Callback fired when recurrence rule changes</p>
+						<p>Callback fired when recurrence rule changes. Receives <code>{ value: string }</code>.</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2539,12 +2542,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/types.d.ts:30</li>
+						<li>Defined in src/recurrence-editor/types.d.ts:57</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Start date for recurrence calculation</p>
+						<p>Start date used for initial state and RRULE calculations. Defaults to <code>new Date()</code>.</p>
 					</div>
 				</div>
 			</section>
@@ -2554,12 +2557,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/types.d.ts:22</li>
+						<li>Defined in src/recurrence-editor/types.d.ts:49</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>RRULE string value representing the recurrence rule</p>
+						<p>RRULE string value representing the recurrence rule. Optional for uncontrolled usage.</p>
 					</div>
 				</div>
 			</section>

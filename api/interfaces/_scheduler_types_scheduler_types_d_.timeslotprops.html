@@ -2382,7 +2382,8 @@ img {
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
 					<p>Represents a single time division in the scheduler&#39;s time scale (e.g., 9:00 AM, 9:30 AM).
-					Used in custom time slot templates to render hour or minute labels.</p>
+						Used in custom time slot templates to render hour or minute labels with context about the slot&#39;s position.
+					Enables developers to create specialized time label formatting or localization strategies.</p>
 				</div>
 			</div>
 		</section>
@@ -2416,12 +2417,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:958</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1112</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The exact date and time represented by this time slot division.</p>
+						<p>The exact date and time represented by this time slot division in the scheduler.
+						Useful for formatting custom time labels or applying time-specific logic.</p>
 					</div>
 				</div>
 			</section>
@@ -2431,13 +2433,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:963</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1117</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Indicates whether this slot is a major division (hourly) or minor division (sub-hourly).
-						Values: &#39;majorSlot&#39; or &#39;minorSlot&#39;</p>
+						<p>Indicates whether this slot is a major division (hourly) or minor division (sub-hourly time subdivision).
+						Values: &#39;majorSlot&#39; for primary hour labels, &#39;minorSlot&#39; for minute subdivisions.</p>
 					</div>
 				</div>
 			</section>

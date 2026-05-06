@@ -2370,6 +2370,9 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#eventoverlap" class="tsd-kind-icon">event<wbr>Overlap</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#eventtemplate" class="tsd-kind-icon">event<wbr>Template</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2418,6 +2421,7 @@ img {
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#eventoverlap" class="tsd-kind-icon">event<wbr>Overlap</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#eventtemplate" class="tsd-kind-icon">event<wbr>Template</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#interval" class="tsd-kind-icon">interval</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.commonviewprops.html#name" class="tsd-kind-icon">name</a></li>
@@ -2434,7 +2438,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:504</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:553</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2450,12 +2454,33 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="eventoverlap" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> event<wbr>Overlap</h3>
+				<div class="tsd-signature tsd-kind-icon">event<wbr>Overlap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:532</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Controls whether multiple events can occupy the same time slot without visual overlap adjustments.
+						When enabled, overlapping events display side-by-side; when disabled, the scheduler prevents scheduling conflicts.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>true</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="eventtemplate" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> event<wbr>Template</h3>
 				<div class="tsd-signature tsd-kind-icon">event<wbr>Template<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:511</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:560</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2497,7 +2522,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:490</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:539</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2518,7 +2543,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:497</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:546</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

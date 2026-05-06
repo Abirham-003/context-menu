@@ -2369,17 +2369,17 @@ img {
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="_recurrence_editor_date_generator_d_.html#extractobjectfromrule" class="tsd-kind-icon">extract<wbr>Object<wbr>From<wbr>Rule</a>
 		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="_recurrence_editor_date_generator_d_.html#generate" class="tsd-kind-icon">generate</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="_recurrence_editor_date_generator_d_.html#generatesummary" class="tsd-kind-icon">generate<wbr>Summary</a>
-		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
 			<a href="_recurrence_editor_date_generator_d_.html#getcalendarutil" class="tsd-kind-icon">get<wbr>Calendar<wbr>Util</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="_recurrence_editor_date_generator_d_.html#getdatefromrecurrencedatestring" class="tsd-kind-icon">get<wbr>Date<wbr>From<wbr>Recurrence<wbr>Date<wbr>String</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_recurrence_editor_date_generator_d_.html#getrecurrencedates" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Dates</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="_recurrence_editor_date_generator_d_.html#getrecurrencesummary" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Summary</a>
 		</li>
 	</ul>
 </nav>
@@ -2399,10 +2399,10 @@ img {
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_date_generator_d_.html#extractobjectfromrule" class="tsd-kind-icon">extract<wbr>Object<wbr>From<wbr>Rule</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_date_generator_d_.html#generate" class="tsd-kind-icon">generate</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_date_generator_d_.html#generatesummary" class="tsd-kind-icon">generate<wbr>Summary</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_recurrence_editor_date_generator_d_.html#getcalendarutil" class="tsd-kind-icon">get<wbr>Calendar<wbr>Util</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_date_generator_d_.html#getdatefromrecurrencedatestring" class="tsd-kind-icon">get<wbr>Date<wbr>From<wbr>Recurrence<wbr>Date<wbr>String</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_date_generator_d_.html#getrecurrencedates" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Dates</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_recurrence_editor_date_generator_d_.html#getrecurrencesummary" class="tsd-kind-icon">get<wbr>Recurrence<wbr>Summary</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2420,7 +2420,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/date-generator.d.ts:43</li>
+								<li>Defined in src/recurrence-editor/date-generator.d.ts:42</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2442,17 +2442,81 @@ img {
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="generate" class="tsd-anchor"></a>
-				<h3>generate</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">generate<span class="tsd-signature-symbol">(</span>startDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, excludeDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startDayOfWeek<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, maximumCount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, viewDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, calendarMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+				<a name="getcalendarutil" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Calendar<wbr>Util</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Calendar<wbr>Util<span class="tsd-signature-symbol">(</span>calendarMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_common_calendar_util_d_.calendarutil.html" class="tsd-signature-type">CalendarUtil</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/date-generator.d.ts:29</li>
+								<li>Defined in src/recurrence-editor/date-generator.d.ts:50</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Internal method to get calendar util</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>calendarMode: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Accepts the calendar type object</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_common_calendar_util_d_.calendarutil.html" class="tsd-signature-type">CalendarUtil</a></h4>
+						<p>Returns the calendar util object</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="getdatefromrecurrencedatestring" class="tsd-anchor"></a>
+				<h3>get<wbr>Date<wbr>From<wbr>Recurrence<wbr>Date<wbr>String</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Date<wbr>From<wbr>Recurrence<wbr>Date<wbr>String<span class="tsd-signature-symbol">(</span>recDateString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/recurrence-editor/date-generator.d.ts:35</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Generate date object from given date string</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>recDateString: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Accepts the exception date as string</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
+						<p>Returns the date from exception date string</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="getrecurrencedates" class="tsd-anchor"></a>
+				<h3>get<wbr>Recurrence<wbr>Dates</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Recurrence<wbr>Dates<span class="tsd-signature-symbol">(</span>startDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, excludeDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startDayOfWeek<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, maximumCount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, viewDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, calendarMode<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/recurrence-editor/date-generator.d.ts:28</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2511,16 +2575,16 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="generatesummary" class="tsd-anchor"></a>
-				<h3>generate<wbr>Summary</h3>
+				<a name="getrecurrencesummary" class="tsd-anchor"></a>
+				<h3>get<wbr>Recurrence<wbr>Summary</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">generate<wbr>Summary<span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, localeObject<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IL10n</span>, locale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, calendarType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Recurrence<wbr>Summary<span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, locale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, localeObject<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">IL10n</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/recurrence-editor/date-generator.d.ts:16</li>
+								<li>Defined in src/recurrence-editor/date-generator.d.ts:15</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2537,90 +2601,20 @@ img {
 								</div>
 							</li>
 							<li>
-								<h5>localeObject: <span class="tsd-signature-type">IL10n</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Accepts the locale object</p>
-								</div>
-							</li>
-							<li>
 								<h5>locale: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>Accepts the locale name</p>
 								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> calendarType: <span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> localeObject: <span class="tsd-signature-type">IL10n</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>Accepts the calendar type</p>
+									<p>Accepts the locale object (optional)</p>
 								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						<p>Returns the summary string from given recurrence rule</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
-				<a name="getcalendarutil" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Calendar<wbr>Util</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Calendar<wbr>Util<span class="tsd-signature-symbol">(</span>calendarMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_common_calendar_util_d_.calendarutil.html" class="tsd-signature-type">CalendarUtil</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/recurrence-editor/date-generator.d.ts:51</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Internal method to get calendar util</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>calendarMode: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Accepts the calendar type object</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_common_calendar_util_d_.calendarutil.html" class="tsd-signature-type">CalendarUtil</a></h4>
-						<p>Returns the calendar util object</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="getdatefromrecurrencedatestring" class="tsd-anchor"></a>
-				<h3>get<wbr>Date<wbr>From<wbr>Recurrence<wbr>Date<wbr>String</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Date<wbr>From<wbr>Recurrence<wbr>Date<wbr>String<span class="tsd-signature-symbol">(</span>recDateString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/recurrence-editor/date-generator.d.ts:36</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Generate date object from given date string</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>recDateString: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Accepts the exception date as string</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-						<p>Returns the date from exception date string</p>
 					</li>
 				</ul>
 			</section>

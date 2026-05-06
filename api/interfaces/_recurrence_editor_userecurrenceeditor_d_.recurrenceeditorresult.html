@@ -2367,6 +2367,9 @@ img {
 			<a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html" class="tsd-kind-icon">Recurrence<wbr>Editor<wbr>Result</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#alertdialogopen" class="tsd-kind-icon">alert<wbr>Dialog<wbr>Open</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#buildrecurrencerule" class="tsd-kind-icon">build<wbr>Recurrence<wbr>Rule</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -2415,6 +2418,9 @@ img {
 					<a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#monthposdatasource" class="tsd-kind-icon">month<wbr>Pos<wbr>Data<wbr>Source</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#setalertdialogopen" class="tsd-kind-icon">set<wbr>Alert<wbr>Dialog<wbr>Open</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#startingdate" class="tsd-kind-icon">starting<wbr>Date</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -2452,45 +2458,41 @@ img {
 				<p>Extends <code>RecurrenceState</code> and supplies derived data sources, helper
 				functions and event handlers intended for use by a recurrence editor UI.</p>
 				<dl class="tsd-comment-tags">
-					<dt>remarks</dt>
-					<dd><p>All functions are pure helpers and the returned <code>handlers</code> are stable
-						references suitable for passing directly to React component props.</p>
+					<dt>property</dt>
+					<dd><p>{Date} startingDate - The initial date used to calculate rule parts.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>startingDate - The initial date used to calculate rule parts.</p>
+					<dd><p>{DropdownData[]} monthDataSource - Localized list of months for a month dropdown.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>monthDataSource - Localized list of months for a month dropdown.</p>
+					<dd><p>{DropdownData[]} monthPosDataSource - Positions in month (first, second, last, etc.).</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>monthPosDataSource - Positions in month (first, second, last, etc.).</p>
+					<dd><p>{{ text: string; value: FreqType }[]} freqDataSource - Localized frequency labels.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>freqDataSource - Localized frequency labels mapped to <code>FreqType</code>.</p>
+					<dd><p>{{ text: string; value: EndType }[]} endDataSource - Localized end-type labels.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>endDataSource - Localized end-type labels mapped to <code>EndType</code>.</p>
+					<dd><p>{RecurrenceItems[]} dayDataSource - Localized day labels for full-width display.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>dayDataSource - Localized day labels for full-width display.</p>
+					<dd><p>{RecurrenceItems[]} weekDayDataSource - Localized day labels for compact/week display.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>weekDayDataSource - Localized day labels for compact/week display.</p>
+					<dd><p>{number|null} maxDate - Number of days in the selected month (or <code>null</code>).</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>maxDate - Number of days in the selected month (or <code>null</code>).</p>
+					<dd><p>{(state: RecurrenceState) =&gt; string} generateRule - Generates an RRULE string for an arbitrary state.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>generateRule - Generates an RRULE string for an arbitrary state.</p>
+					<dd><p>{() =&gt; string} buildRecurrenceRule - Builds an RRULE string from the current state.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>buildRecurrenceRule - Builds an RRULE string from the current state.</p>
+					<dd><p>{(monthName: string) =&gt; void} updateMaxDate - Updates <code>maxDate</code> given a localized month name.</p>
 					</dd>
 					<dt>property</dt>
-					<dd><p>updateMaxDate - Updates <code>maxDate</code> given a localized month name.</p>
-					</dd>
-					<dt>property</dt>
-					<dd><p>handlers - Collection of UI event handlers for editor controls.</p>
+					<dd><p>{RecurrenceHandlers} handlers - Collection of UI event handlers for editor controls.</p>
 					</dd>
 					<dt>example</dt>
 					<dd><p>const editor = useRecurrenceEditor(&#39;FREQ=DAILY;&#39;, new Date(), [&#39;DAILY&#39;,&#39;WEEKLY&#39;], [&#39;Count&#39;,&#39;Until&#39;], 0);
@@ -2519,6 +2521,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#alertdialogopen" class="tsd-kind-icon">alert<wbr>Dialog<wbr>Open</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#buildrecurrencerule" class="tsd-kind-icon">build<wbr>Recurrence<wbr>Rule</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#count" class="tsd-kind-icon">count</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#daydatasource" class="tsd-kind-icon">day<wbr>Data<wbr>Source</a></li>
@@ -2535,6 +2538,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#monthdatasource" class="tsd-kind-icon">month<wbr>Data<wbr>Source</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#monthdate" class="tsd-kind-icon">month<wbr>Date</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#monthposdatasource" class="tsd-kind-icon">month<wbr>Pos<wbr>Data<wbr>Source</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#setalertdialogopen" class="tsd-kind-icon">set<wbr>Alert<wbr>Dialog<wbr>Open</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#startingdate" class="tsd-kind-icon">starting<wbr>Date</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#until" class="tsd-kind-icon">until</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_recurrence_editor_userecurrenceeditor_d_.recurrenceeditorresult.html#updatemaxdate" class="tsd-kind-icon">update<wbr>Max<wbr>Date</a></li>
@@ -2550,12 +2554,22 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="alertdialogopen" class="tsd-anchor"></a>
+				<h3>alert<wbr>Dialog<wbr>Open</h3>
+				<div class="tsd-signature tsd-kind-icon">alert<wbr>Dialog<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:45</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="buildrecurrencerule" class="tsd-anchor"></a>
 				<h3>build<wbr>Recurrence<wbr>Rule</h3>
 				<div class="tsd-signature tsd-kind-icon">build<wbr>Recurrence<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:46</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:42</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2581,7 +2595,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#count">count</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:47</li>
+						<li>Defined in src/recurrence-editor/types.ts:81</li>
 					</ul>
 				</aside>
 			</section>
@@ -2591,7 +2605,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">day<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="_recurrence_editor_types_d_.recurrenceitems.html" class="tsd-signature-type">RecurrenceItems</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:42</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:38</li>
 					</ul>
 				</aside>
 			</section>
@@ -2602,7 +2616,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#dayweekmode">dayWeekMode</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:51</li>
+						<li>Defined in src/recurrence-editor/types.ts:85</li>
 					</ul>
 				</aside>
 			</section>
@@ -2612,7 +2626,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_recurrence_editor_types_d_.html#endtype" class="tsd-signature-type">EndType</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:38</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:34</li>
 					</ul>
 				</aside>
 			</section>
@@ -2623,7 +2637,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#endtype">endType</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:45</li>
+						<li>Defined in src/recurrence-editor/types.ts:79</li>
 					</ul>
 				</aside>
 			</section>
@@ -2634,7 +2648,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#freq">freq</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:44</li>
+						<li>Defined in src/recurrence-editor/types.ts:78</li>
 					</ul>
 				</aside>
 			</section>
@@ -2644,7 +2658,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">freq<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="../modules/_recurrence_editor_types_d_.html#freqtype" class="tsd-signature-type">FreqType</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:34</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:30</li>
 					</ul>
 				</aside>
 			</section>
@@ -2654,7 +2668,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">generate<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="_recurrence_editor_types_d_.recurrencestate.html" class="tsd-signature-type">RecurrenceState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:45</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:41</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2685,7 +2699,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">handlers<span class="tsd-signature-symbol">:</span> <a href="_recurrence_editor_types_d_.recurrencehandlers.html" class="tsd-signature-type">RecurrenceHandlers</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:48</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:44</li>
 					</ul>
 				</aside>
 			</section>
@@ -2696,7 +2710,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#interval">interval</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:46</li>
+						<li>Defined in src/recurrence-editor/types.ts:80</li>
 					</ul>
 				</aside>
 			</section>
@@ -2707,7 +2721,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Overrides <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#maxdate">maxDate</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:44</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:40</li>
 					</ul>
 				</aside>
 			</section>
@@ -2718,7 +2732,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#month">month</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:48</li>
+						<li>Defined in src/recurrence-editor/types.ts:82</li>
 					</ul>
 				</aside>
 			</section>
@@ -2728,7 +2742,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">month<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="../modules/_recurrence_editor_types_d_.html#dropdowndata" class="tsd-signature-type">DropdownData</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:32</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:28</li>
 					</ul>
 				</aside>
 			</section>
@@ -2739,7 +2753,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#monthdate">monthDate</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:50</li>
+						<li>Defined in src/recurrence-editor/types.ts:84</li>
 					</ul>
 				</aside>
 			</section>
@@ -2749,9 +2763,40 @@ img {
 				<div class="tsd-signature tsd-kind-icon">month<wbr>Pos<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="../modules/_recurrence_editor_types_d_.html#dropdowndata" class="tsd-signature-type">DropdownData</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:33</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:29</li>
 					</ul>
 				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="setalertdialogopen" class="tsd-anchor"></a>
+				<h3>set<wbr>Alert<wbr>Dialog<wbr>Open</h3>
+				<div class="tsd-signature tsd-kind-icon">set<wbr>Alert<wbr>Dialog<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:46</li>
+					</ul>
+				</aside>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-siganture">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>open: <span class="tsd-signature-type">boolean</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="startingdate" class="tsd-anchor"></a>
@@ -2759,7 +2804,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">starting<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:31</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:27</li>
 					</ul>
 				</aside>
 			</section>
@@ -2770,7 +2815,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#until">until</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:54</li>
+						<li>Defined in src/recurrence-editor/types.ts:88</li>
 					</ul>
 				</aside>
 			</section>
@@ -2780,7 +2825,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">update<wbr>Max<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>monthName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:47</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:43</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2812,7 +2857,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#weekday">weekDay</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:49</li>
+						<li>Defined in src/recurrence-editor/types.ts:83</li>
 					</ul>
 				</aside>
 			</section>
@@ -2822,7 +2867,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">week<wbr>Day<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="_recurrence_editor_types_d_.recurrenceitems.html" class="tsd-signature-type">RecurrenceItems</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:43</li>
+						<li>Defined in src/recurrence-editor/useRecurrenceEditor.d.ts:39</li>
 					</ul>
 				</aside>
 			</section>
@@ -2833,7 +2878,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#weekdays">weekDays</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:53</li>
+						<li>Defined in src/recurrence-editor/types.ts:87</li>
 					</ul>
 				</aside>
 			</section>
@@ -2844,7 +2889,7 @@ img {
 				<aside class="tsd-sources">
 					<p>Inherited from <a href="_recurrence_editor_types_d_.recurrencestate.html">RecurrenceState</a>.<a href="_recurrence_editor_types_d_.recurrencestate.html#weeknumber">weekNumber</a></p>
 					<ul>
-						<li>Defined in src/recurrence-editor/types.ts:52</li>
+						<li>Defined in src/recurrence-editor/types.ts:86</li>
 					</ul>
 				</aside>
 			</section>

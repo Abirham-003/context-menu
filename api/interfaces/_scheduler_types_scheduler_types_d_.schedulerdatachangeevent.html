@@ -2391,7 +2391,8 @@ img {
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
 					<p>Event arguments provided during scheduler data modification operations (add, update, delete).
-					Allows interception and custom handling of CRUD operations and server-side validation.</p>
+						Allows interception and custom handling of CRUD operations with support for server-side validation and cancellation.
+					Enables developers to implement custom validation logic, loading indicators, or data persistence workflows.</p>
 				</div>
 			</div>
 		</section>
@@ -2428,12 +2429,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">added<wbr>Records<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1188</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1341</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An array of newly created event records during add operations.</p>
+						<p>Array of newly created event records during add operations.
+						Each record contains the full event data for the newly added events.</p>
 					</div>
 				</div>
 			</section>
@@ -2443,12 +2445,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1184</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1336</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Set to true to cancel the entire data modification operation and revert all changes.</p>
+						<p>Set to true to cancel the entire data modification operation and revert all changes to the scheduler.
+						Useful for validation failures or business logic constraints.</p>
 					</div>
 				</div>
 			</section>
@@ -2458,12 +2461,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">changed<wbr>Records<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1192</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1346</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An array of modified event records during update operations.</p>
+						<p>Array of modified event records during update operations.
+						Each record contains the updated event data for changed events.</p>
 					</div>
 				</div>
 			</section>
@@ -2473,12 +2477,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">deleted<wbr>Records<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1196</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1351</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An array of deleted event records during delete operations.</p>
+						<p>Array of deleted event records during delete operations.
+						Each record contains the full data of removed events.</p>
 					</div>
 				</div>
 			</section>
@@ -2488,14 +2493,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1204</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1358</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An optional promise that validates overlapping events on the server.
-							If resolved with true, overlapping events are found and the operation is canceled.
-						If resolved with false, no conflicts exist and the operation proceeds.</p>
+						<p>Optional promise for server-side overlap validation of events.
+						If resolved with true, overlapping conflicts are found and the operation is canceled; false allows the operation to proceed.</p>
 					</div>
 				</div>
 			</section>

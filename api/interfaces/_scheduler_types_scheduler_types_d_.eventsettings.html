@@ -2379,6 +2379,9 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.eventsettings.html#datasource" class="tsd-kind-icon">data<wbr>Source</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.eventsettings.html#editfollowingevents" class="tsd-kind-icon">edit<wbr>Following<wbr>Events</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.eventsettings.html#enableindicator" class="tsd-kind-icon">enable<wbr>Indicator</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2405,8 +2408,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Defines the configuration for event data binding and field mapping in the scheduler.
-					Supports local data arrays, remote data sources, and custom field definitions.</p>
+					<p>Configures event data binding and field mapping for the scheduler component.
+						Supports local data arrays, remote data sources via DataManager, and custom field definitions for flexible data integration.
+					Enables customization of data source operations, event visibility controls, and advanced rendering options like event indicators.</p>
 				</div>
 			</div>
 		</section>
@@ -2429,6 +2433,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#allowdeleting" class="tsd-kind-icon">allow<wbr>Deleting</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#allowediting" class="tsd-kind-icon">allow<wbr>Editing</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#datasource" class="tsd-kind-icon">data<wbr>Source</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#editfollowingevents" class="tsd-kind-icon">edit<wbr>Following<wbr>Events</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#enableindicator" class="tsd-kind-icon">enable<wbr>Indicator</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#fields" class="tsd-kind-icon">fields</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventsettings.html#ignorewhitespace" class="tsd-kind-icon">ignore<wbr>Whitespace</a></li>
@@ -2448,12 +2453,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">allow<wbr>Adding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:599</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:665</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables event creation capabilities for end users.
+						<p>Enables or disables the ability to create new events in the scheduler.
 						When disabled, users cannot add new events to the scheduler.</p>
 					</div>
 					<dl class="tsd-comment-tags">
@@ -2469,12 +2474,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">allow<wbr>Deleting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:606</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:672</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables event deletion capabilities for end users.
+						<p>Enables or disables the ability to delete events from the scheduler.
 						When disabled, users cannot remove existing events from the scheduler.</p>
 					</div>
 					<dl class="tsd-comment-tags">
@@ -2490,12 +2495,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">allow<wbr>Editing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:592</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:658</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables event editing capabilities for end users.
+						<p>Enables or disables the ability to edit existing events in the scheduler.
 						When disabled, existing events cannot be modified.</p>
 					</div>
 					<dl class="tsd-comment-tags">
@@ -2511,17 +2516,40 @@ img {
 				<div class="tsd-signature tsd-kind-icon">data<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DataManager</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:578</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:644</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The event data source for the scheduler. Accepts an array of JavaScript objects or a DataManager instance for remote data.
-						Automatically bound to the scheduler upon initialization.</p>
+						<p>The event data source for the scheduler, supporting local arrays or remote DataManager instances.
+						Events are automatically bound to the scheduler upon initialization without requiring manual configuration.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>[]</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="editfollowingevents" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> edit<wbr>Following<wbr>Events</h3>
+				<div class="tsd-signature tsd-kind-icon">edit<wbr>Following<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:716</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Enables or disables the &quot;Following Events&quot; option in recurrence edit/delete dialogs.
+							When enabled, users can choose to edit or delete this and all following occurrences of a recurring event.
+							When disabled, only &quot;Edit Event&quot; and &quot;Edit Series&quot; options are shown.
+						The following events feature allows splitting a recurring series at a specific date into two independent series.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
 						</dd>
 					</dl>
 				</div>
@@ -2532,13 +2560,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enable<wbr>Indicator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:627</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:693</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>When enabled, events expand to fill available space, with overflow managed by the &quot;more events&quot; indicator.
-						Improves readability in cells with many events.</p>
+						<p>When enabled, events automatically expand to fill available cell space with excess events managed by a &quot;+n more&quot; indicator.
+						Improves readability for cells containing many events without compromising layout stability.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2553,13 +2581,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.eventfields.html" class="tsd-signature-type">EventFields</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:585</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:651</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Maps database or object properties to scheduler event fields (id, subject, startTime, etc.).
-						Allows flexible integration with existing data structures without requiring data transformation.</p>
+						<p>Maps your data source field names to scheduler event properties (id, subject, startTime, etc.).
+						Eliminates the need for data transformation, directly connecting your existing data structure to the scheduler.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2574,13 +2602,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">ignore<wbr>Whitespace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:634</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:700</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>When enabled, ignores empty space below events within cells, allowing tighter event packing.
-						Useful for maximizing cell usage in views with many events.</p>
+						<p>When enabled, removes vertical gaps between events in cells, allowing tighter, more compact event packing.
+						Maximizes cell usage when displaying many events in high-density scheduling scenarios.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2595,13 +2623,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Query</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:642</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:707</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Applies a predefined query to the data source for filtering, sorting, or custom operations.
-						Particularly useful when working with remote data sources requiring complex query logic.</p>
+						<p>Applies a pre-configured query to the data source for filtering, sorting, or advanced operations.
+						Essential when working with remote data sources requiring complex filtering, sorting, or pagination logic.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2616,13 +2644,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">spanned<wbr>Event<wbr>Placement<span class="tsd-signature-symbol">:</span> <a href="../modules/_scheduler_types_enums_d_.html#spannedeventplacement" class="tsd-signature-type">SpannedEventPlacement</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:620</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:686</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Determines how spanned events (longer than 24 hours) are rendered: in an all-day row or within time slot rows.
-						Default behavior displays them in the all-day section for clarity.</p>
+						<p>Determines how multi-day events (longer than 24 hours) are positioned in the scheduler.
+						Set to &#39;AllDayRow&#39; to display in the all-day section for clarity, or within time slots for compact layouts.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2637,13 +2665,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">template<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:613</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:679</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Accepts a custom React component to render event content across all views.
-						Can be overridden by view-level event templates for specific views.</p>
+						<p>Provides a custom React component to render event content across all scheduler views.
+						Individual view-level templates take precedence over this root-level template when both are configured.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>

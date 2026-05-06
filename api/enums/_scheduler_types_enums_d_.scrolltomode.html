@@ -2363,7 +2363,10 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
+			<a href="_scheduler_types_enums_d_.alertaction.html" class="tsd-kind-icon">Alert<wbr>Action</a>
+		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
 			<a href="_scheduler_types_enums_d_.alerttype.html" class="tsd-kind-icon">Alert<wbr>Type</a>
 		</li>
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
@@ -2379,7 +2382,7 @@ img {
 					<a href="_scheduler_types_enums_d_.scrolltomode.html#currenttime" class="tsd-kind-icon">Current<wbr>Time</a>
 				</li>
 				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-					<a href="_scheduler_types_enums_d_.scrolltomode.html#workhours" class="tsd-kind-icon">Work<wbr>Hours</a>
+					<a href="_scheduler_types_enums_d_.scrolltomode.html#workhour" class="tsd-kind-icon">Work<wbr>Hour</a>
 				</li>
 			</ul>
 		</li>
@@ -2387,7 +2390,7 @@ img {
 			<a href="../modules/_scheduler_types_enums_d_.html#crudaction" class="tsd-kind-icon">Crud<wbr>Action</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-			<a href="../modules/_scheduler_types_enums_d_.html#editortype" class="tsd-kind-icon">Editor<wbr>Type</a>
+			<a href="../modules/_scheduler_types_enums_d_.html#editaction" class="tsd-kind-icon">Edit<wbr>Action</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 			<a href="../modules/_scheduler_types_enums_d_.html#spannedeventplacement" class="tsd-kind-icon">Spanned<wbr>Event<wbr>Placement</a>
@@ -2405,7 +2408,10 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Specifies the available modes for automatically determining the scroll target, when a view is rendered.</p>
+					<p>Determines how the Scheduler chooses the vertical scroll target when a view is first rendered.</p>
+					<pre><code class="language-props">CurrentTime:- Scroll to the current time indicator if it is visible in the rendered view.
+WorkHour:- Scroll to the configured start of the work hours.
+Auto:- Prefer the current time indicator when present; otherwise scroll to the work hour start.</code></pre>
 				</div>
 			</div>
 		</section>
@@ -2418,7 +2424,7 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_scheduler_types_enums_d_.scrolltomode.html#auto" class="tsd-kind-icon">Auto</a></li>
 							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_scheduler_types_enums_d_.scrolltomode.html#currenttime" class="tsd-kind-icon">Current<wbr>Time</a></li>
-							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_scheduler_types_enums_d_.scrolltomode.html#workhours" class="tsd-kind-icon">Work<wbr>Hours</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_scheduler_types_enums_d_.scrolltomode.html#workhour" class="tsd-kind-icon">Work<wbr>Hour</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2432,13 +2438,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Auto<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;auto&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:79</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:113</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies automatic selection between the current time indicator and the work hour start.
-						choosing whichever is applicable for the current view.</p>
+						<p>Prefer current time when available, otherwise use work hour start.</p>
 					</div>
 				</div>
 			</section>
@@ -2448,27 +2453,27 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Current<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;currentTime&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:73</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:109</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies scrolling to the current time indicator when it exists in the view.</p>
+						<p>Scroll to the current time indicator when present.</p>
 					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-				<a name="workhours" class="tsd-anchor"></a>
-				<h3>Work<wbr>Hours</h3>
-				<div class="tsd-signature tsd-kind-icon">Work<wbr>Hours<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;workHours&quot;</span></div>
+				<a name="workhour" class="tsd-anchor"></a>
+				<h3>Work<wbr>Hour</h3>
+				<div class="tsd-signature tsd-kind-icon">Work<wbr>Hour<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;workHour&quot;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:75</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:111</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies scrolling to the start of the defined work hours.</p>
+						<p>Scroll to the start of the defined work hours.</p>
 					</div>
 				</div>
 			</section>

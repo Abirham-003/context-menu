@@ -2577,22 +2577,34 @@ img {
 				<a name="navigatetotoday" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> navigate<wbr>ToToday</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">navigate<wbr>ToToday<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
+					<li class="tsd-signature tsd-kind-icon">navigate<wbr>ToToday<span class="tsd-signature-symbol">(</span>timezone<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/NavigationService.d.ts:55</li>
+								<li>Defined in src/scheduler/services/NavigationService.d.ts:59</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Navigate to today&#39;s date</p>
+								<p>Navigate to today&#39;s date in the specified timezone.</p>
 							</div>
+							<dl class="tsd-comment-tags">
+								<dt>remarks</dt>
+								<dd><p>If a timezone is provided, the returned date represents the start of today in that timezone.
+									For example, if calling in America/New_York at 3 AM UTC, this returns midnight EST.</p>
+								</dd>
+							</dl>
 						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> timezone: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span></h4>
-						<p>Today&#39;s date</p>
+						<p>Today&#39;s date in the specified timezone</p>
 					</li>
 				</ul>
 			</section>

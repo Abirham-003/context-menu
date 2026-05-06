@@ -2387,8 +2387,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Event arguments provided when a scheduler event is clicked or tapped.
-					Contains the event data and DOM reference for custom interaction handling.</p>
+					<p>Event arguments provided when a scheduler event is clicked or tapped on mobile devices.
+						Contains the complete event data and DOM reference for custom interaction handling and event manipulation.
+					Enables developers to trigger custom workflows or prevent default event editing behaviors.</p>
 				</div>
 			</div>
 		</section>
@@ -2424,12 +2425,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:933</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1083</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Set to true to cancel the default event click behavior (e.g., preventing event editor from opening).</p>
+						<p>Set to true to cancel the default event click behavior (e.g., preventing auto-opening the event editor).
+						Allows custom handling of event clicks without triggering default actions.</p>
 					</div>
 				</div>
 			</section>
@@ -2439,12 +2441,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:925</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1073</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The complete event data object containing all event properties and custom fields.</p>
+						<p>The complete event data object containing all event properties, custom fields, and metadata.
+						Provides full context for event manipulation and custom workflow logic.</p>
 					</div>
 				</div>
 			</section>
@@ -2454,27 +2457,29 @@ img {
 				<div class="tsd-signature tsd-kind-icon">element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:929</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1078</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The DOM element of the clicked event, enabling direct styling or inspection if needed.</p>
+						<p>The DOM element of the clicked event, enabling direct styling, inspection, or parent element access.
+						Useful for custom styling or element manipulation.</p>
 					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="event" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> event</h3>
-				<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MouseEvent</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:921</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1068</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The native React MouseEvent triggered by clicking the event element.</p>
+						<p>The native React MouseEvent triggered by clicking the event element.
+						Provides access to browser event properties, coordinates, and interaction details.</p>
 					</div>
 				</div>
 			</section>

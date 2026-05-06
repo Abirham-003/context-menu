@@ -2363,20 +2363,23 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
 			<a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-kind-icon">Alert<wbr>Action</a>
 		</li>
-		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
 			<a href="../enums/_scheduler_types_enums_d_.alerttype.html" class="tsd-kind-icon">Alert<wbr>Type</a>
 		</li>
 		<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-private">
 			<a href="../enums/_scheduler_types_enums_d_.direction.html" class="tsd-kind-icon">Direction</a>
 		</li>
+		<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+			<a href="../enums/_scheduler_types_enums_d_.scrolltomode.html" class="tsd-kind-icon">Scroll<wbr>ToMode</a>
+		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 			<a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-kind-icon">Crud<wbr>Action</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-			<a href="_scheduler_types_enums_d_.html#editortype" class="tsd-kind-icon">Editor<wbr>Type</a>
+			<a href="_scheduler_types_enums_d_.html#editaction" class="tsd-kind-icon">Edit<wbr>Action</a>
 		</li>
 		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 			<a href="_scheduler_types_enums_d_.html#spannedeventplacement" class="tsd-kind-icon">Spanned<wbr>Event<wbr>Placement</a>
@@ -2398,16 +2401,17 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Enumerations</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-kind-icon">Alert<wbr>Action</a></li>
-							<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_scheduler_types_enums_d_.alerttype.html" class="tsd-kind-icon">Alert<wbr>Type</a></li>
+							<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-private"><a href="../enums/_scheduler_types_enums_d_.alertaction.html" class="tsd-kind-icon">Alert<wbr>Action</a></li>
+							<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-private"><a href="../enums/_scheduler_types_enums_d_.alerttype.html" class="tsd-kind-icon">Alert<wbr>Type</a></li>
 							<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-private"><a href="../enums/_scheduler_types_enums_d_.direction.html" class="tsd-kind-icon">Direction</a></li>
+							<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_scheduler_types_enums_d_.scrolltomode.html" class="tsd-kind-icon">Scroll<wbr>ToMode</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
 						<h3>Type aliases</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_scheduler_types_enums_d_.html#crudaction" class="tsd-kind-icon">Crud<wbr>Action</a></li>
-							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_scheduler_types_enums_d_.html#editortype" class="tsd-kind-icon">Editor<wbr>Type</a></li>
+							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_scheduler_types_enums_d_.html#editaction" class="tsd-kind-icon">Edit<wbr>Action</a></li>
 							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_scheduler_types_enums_d_.html#spannedeventplacement" class="tsd-kind-icon">Spanned<wbr>Event<wbr>Placement</a></li>
 							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_scheduler_types_enums_d_.html#view" class="tsd-kind-icon">View</a></li>
 							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_scheduler_types_enums_d_.html#weekrule" class="tsd-kind-icon">Week<wbr>Rule</a></li>
@@ -2421,43 +2425,45 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 				<a name="crudaction" class="tsd-anchor"></a>
 				<h3>Crud<wbr>Action</h3>
-				<div class="tsd-signature tsd-kind-icon">Crud<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Add"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditCurrentSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Delete"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditFollowingEvents"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteFollowingEvents"</span></div>
+				<div class="tsd-signature tsd-kind-icon">Crud<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Add"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditCurrentSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Delete"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditFollowingEvents"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditCurrentFollowingEvents"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"DeleteFollowingEvents"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:36</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:37</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>A type representing the action performed when opening the editor.</p>
+						<pre><code class="language-props">Add :- Opens the editor to create a new event.
+Edit :- Opens the editor to modify an existing event.
+EditSeries :- Opens the editor to modify an entire recurring event series.
+EditCurrentSeries :- Opens the editor to modify the current occurrence of a recurring event.
+EditOccurrence :- Opens the editor to modify a specific occurrence of a recurring event.
+Delete :- Opens an editor to delete a specific occurrence of a recurring event.
+DeleteOccurrence :- Opens a confirmation dialog to delete a specific occurrence of a recurring event.
+DeleteSeries :- Opens a confirmation dialog to delete an entire recurring event series.
+EditFollowingEvents :- Opens the editor to modify the current and following occurrences of a recurring event.
+DeleteFollowingEvents :- Opens a confirmation dialog to delete the current and following occurrences of a recurring event.</code></pre>
 					</div>
-					<p>&#39;Add&#39;: Opens the editor to create a new event.
-						&#39;Edit&#39;: Opens the editor to modify an existing event.
-						&#39;EditSeries&#39;: Opens the editor to modify an entire recurring event series.
-						&#39;EditCurrentSeries&#39;: Opens the editor to modify the current occurrences of a recurring event.
-						&#39;EditOccurrence&#39;: Opens the editor to modify a specific occurrence of a recurring event.
-						&#39;Delete&#39;: Opens a editor to delete a specific occurrence of a recurring event.
-						&#39;DeleteOccurrence&#39;: Opens a confirmation dialog to delete a specific occurrence of a recurring event.
-						&#39;DeleteSeries&#39;: Opens a confirmation dialog to delete an entire recurring event series.
-						&#39;EditFollowingEvents&#39;: Opens the editor to modify the current and following occurrences of a recurring event.
-					&#39;DeleteFollowingEvents&#39;: Opens a confirmation dialog to delete the current and following occurrences of a recurring event.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-				<a name="editortype" class="tsd-anchor"></a>
-				<h3>Editor<wbr>Type</h3>
-				<div class="tsd-signature tsd-kind-icon">Editor<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Cell"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Event"</span></div>
+				<a name="editaction" class="tsd-anchor"></a>
+				<h3>Edit<wbr>Action</h3>
+				<div class="tsd-signature tsd-kind-icon">Edit<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"Add"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Edit"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditSeries"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditOccurrence"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"EditFollowingEvents"</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/enums.d.ts:43</li>
+						<li>Defined in src/scheduler/types/enums.d.ts:47</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>An enum that represents the context type used to open the editor.</p>
+						<pre><code class="language-props">Add :- Opens the editor to create a new event.
+Edit :- Opens the editor to modify an existing event.
+EditSeries :- Opens the editor to modify an entire recurring event series.
+EditOccurrence :- Opens the editor to modify a specific occurrence of a recurring event.</code></pre>
 					</div>
-					<p>cell: Editor is opened from a cell context (creating new).
-					event: Editor is opened from an event context (editing existing).</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -2504,9 +2510,9 @@ TimeSlot :- Denotes the rendering of spanned events in an time slot row.</code><
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>An enum that holds the options to render the week number based on different rules.</p>
-						<pre><code class="language-props">FirstDay:- Denotes that the first week of the year starts on the first day of the year and ends before the following designated first day of the week.
-FirstFourDayWeek:- Denotes that the first week of the year is the first week with four or more days before the designated first day of the week.
-FirstFullWeek:- Denotes that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.</code></pre>
+						<pre><code class="language-props">FirstDay :- Denotes that the first week of the year starts on the first day of the year and ends before the following designated first day of the week.
+FirstFourDayWeek :- Denotes that the first week of the year is the first week with four or more days before the designated first day of the week.
+FirstFullWeek :- Denotes that the first week of the year begins on the first occurrence of the designated first day of the week on or after the first day of the year.</code></pre>
 					</div>
 				</div>
 			</section>

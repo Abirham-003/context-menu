@@ -2367,10 +2367,16 @@ img {
 			<a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html" class="tsd-kind-icon">Scheduler<wbr>Data<wbr>Request<wbr>Event</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#count" class="tsd-kind-icon">count</a>
+					<a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#cancel" class="tsd-kind-icon">cancel</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#enddate" class="tsd-kind-icon">end<wbr>Date</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#result" class="tsd-kind-icon">result</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#startdate" class="tsd-kind-icon">start<wbr>Date</a>
 				</li>
 			</ul>
 		</li>
@@ -2381,8 +2387,8 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Event arguments provided when event data is requested from the data source.
-					Contains raw data and metadata before field mapping to the event model.</p>
+					<p>Fired before data is requested from the data source.
+					Provides the requested date range, optional promise, cancel flag, and result.</p>
 				</div>
 			</div>
 		</section>
@@ -2401,8 +2407,10 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#count" class="tsd-kind-icon">count</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#cancel" class="tsd-kind-icon">cancel</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#enddate" class="tsd-kind-icon">end<wbr>Date</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#result" class="tsd-kind-icon">result</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerdatarequestevent.html#startdate" class="tsd-kind-icon">start<wbr>Date</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2411,34 +2419,64 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="count" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> count</h3>
-				<div class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<a name="cancel" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> cancel</h3>
+				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1220</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1395</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The total number of records available in the data source that match the query (if applicable).
-						Useful for pagination or lazy-loading implementations.</p>
+						<p>Set to true to cancel the data request operation.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="enddate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> end<wbr>Date</h3>
+				<div class="tsd-signature tsd-kind-icon">end<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1391</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The end date of the requested data range.
+						Useful for server-side filtering or async data fetching.</p>
 					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="result" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> result</h3>
-				<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span></div>
+				<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1215</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1399</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The raw event records returned by the DataManager after executing the query.
-						Each object contains the source data before field mapping to the scheduler event model.</p>
+						<p>Raw records returned by the data source (before field mapping).</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="startdate" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>Date</h3>
+				<div class="tsd-signature tsd-kind-icon">start<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1386</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The start date of the requested data range.
+						Useful for server-side filtering or async data fetching.</p>
 					</div>
 				</div>
 			</section>

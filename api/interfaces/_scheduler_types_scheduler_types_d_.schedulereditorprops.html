@@ -2405,8 +2405,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Props for configuring the SchedulerEditorPopup component.
-					Use these to customize the dialog, header/footer, fields, validation and styling.</p>
+					<p>Props for configuring the customization options of the scheduler&#39;s editor dialog for event creation and editing.
+						Enables control over dialog visibility, event data, fields, validation, and styling through a comprehensive configuration interface.
+					Supports both field-based and children-based rendering approaches for flexible editor customization.</p>
 				</div>
 			</div>
 		</section>
@@ -2448,12 +2449,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <a href="../modules/_scheduler_types_enums_d_.html#crudaction" class="tsd-signature-type">CrudAction</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1592</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1846</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Editor mode: &#39;Add&#39; for new event, &#39;Edit&#39; for editing existing.</p>
+						<p>The editor mode indicating whether creating (&#39;Add&#39;) a new event or editing (&#39;Edit&#39;) an existing one.
+						Useful for conditional rendering or validation logic.</p>
 					</div>
 				</div>
 			</section>
@@ -2463,12 +2465,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1612</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1871</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Children rendered when fields is not provided.</p>
+						<p>Custom React components or content rendered as editor children when <code>fields</code> is not provided.
+						Enables complete custom editor implementations.</p>
 					</div>
 				</div>
 			</section>
@@ -2478,12 +2481,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1604</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1861</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Additional class name applied to the editor container.</p>
+						<p>Adds custom CSS class names to the editor container element.
+						Enables custom styling and visual customization through external CSS.</p>
 					</div>
 				</div>
 			</section>
@@ -2493,12 +2497,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1584</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1836</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Event data to be saved.</p>
+						<p>The event data object being edited or created with all property values.
+						Bind to this for two-way data binding with form inputs.</p>
 					</div>
 				</div>
 			</section>
@@ -2508,12 +2513,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">dialog<wbr>Props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DialogProps</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1596</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1851</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Provides configuration properties to customize and override the default editor dialog.</p>
+						<p>Configuration object for the underlying editor dialog component.
+						Allows customization of dialog appearance, behavior, and properties.</p>
 					</div>
 				</div>
 			</section>
@@ -2523,12 +2529,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">fields<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.schedulereditorfield.html" class="tsd-signature-type">SchedulerEditorField</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1600</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1856</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Field pipeline visibility, component overrides, and field-level props.</p>
+						<p>An array of field configurations controlling which fields are displayed and how they render.
+						Provides granular control over editor input customization and visibility.</p>
 					</div>
 				</div>
 			</section>
@@ -2538,12 +2545,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1580</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1831</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Callback fired when the editor should be closed.</p>
+						<p>Callback function triggered when the user requests to close the event editor dialog.
+						Allows custom close logic or confirmation dialogs.</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2568,12 +2576,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1576</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1826</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controls the visibility of the editor popup.</p>
+						<p>Controls whether the event editor dialog is visible (true) or hidden (false).
+						Allows programmatic control over editor visibility.</p>
 					</div>
 				</div>
 			</section>
@@ -2583,12 +2592,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">original<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1588</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1841</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Original event data when editing (undefined when creating new event).</p>
+						<p>The original event data before any edits (only present in edit mode; undefined when creating new events).
+						Useful for detecting changes or reverting modifications.</p>
 					</div>
 				</div>
 			</section>
@@ -2598,12 +2608,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">style<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CSSProperties</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1608</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1866</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Inline styles applied to the editor container.</p>
+						<p>Inline CSS styles applied directly to the editor container element.
+						Enables direct style customization without external CSS.</p>
 					</div>
 				</div>
 			</section>

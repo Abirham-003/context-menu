@@ -2381,8 +2381,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Event arguments provided when the &quot;+n more events&quot; indicator is clicked in the Scheduler.
-					Allows custom handling of expanded event list display.</p>
+					<p>Event arguments provided when the &quot;+n more events&quot; indicator is clicked in the scheduler&#39;s Month view.
+						Contains all events for the clicked date or time slot to enable custom display or filtering logic.
+					Enables developers to implement custom event expansion behaviors or alternative event display strategies.</p>
 				</div>
 			</div>
 		</section>
@@ -2416,12 +2417,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:943</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1095</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Set to true to cancel the more events popup open and handle expansion manually.</p>
+						<p>Set to true to cancel the more events popup expansion and implement custom event display logic.
+						Allows full control over how overflowing events are presented to users.</p>
 					</div>
 				</div>
 			</section>
@@ -2431,13 +2433,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:948</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1100</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>An array of all event objects for the clicked date or time slot.
-						Useful for custom display or filtering logic.</p>
+						Provides context for custom display, filtering, or aggregation logic.</p>
 					</div>
 				</div>
 			</section>

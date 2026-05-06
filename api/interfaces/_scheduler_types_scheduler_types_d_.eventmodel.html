@@ -2373,6 +2373,12 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtime" class="tsd-kind-icon">end<wbr>Time</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtimezone" class="tsd-kind-icon">end<wbr>Timezone</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#followingid" class="tsd-kind-icon">following<wbr>Id</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#id" class="tsd-kind-icon">id</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2400,6 +2406,9 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttime" class="tsd-kind-icon">start<wbr>Time</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttimezone" class="tsd-kind-icon">start<wbr>Timezone</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#subject" class="tsd-kind-icon">subject</a>
 				</li>
 			</ul>
@@ -2411,8 +2420,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Represents the data structure of a single event in the scheduler.
-					Contains all relevant event details and supports custom properties via the indexed signature.</p>
+					<p>Represents the complete data structure of a single event in the scheduler.
+						Contains all event details including timing, location, and recurrence information, with support for custom properties.
+					Provides a unified interface for event manipulation across all scheduler views and operations.</p>
 				</div>
 			</div>
 		</section>
@@ -2429,7 +2439,8 @@ img {
 			<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">unknown</span></div>
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Allows custom properties beyond the standard event fields for flexible event data modeling.</p>
+					<p>Supports custom properties beyond standard event fields for flexible event data modeling.
+					Allows extending event objects with domain-specific attributes and metadata.</p>
 				</div>
 			</div>
 		</section>
@@ -2442,6 +2453,8 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#description" class="tsd-kind-icon">description</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtime" class="tsd-kind-icon">end<wbr>Time</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtimezone" class="tsd-kind-icon">end<wbr>Timezone</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#followingid" class="tsd-kind-icon">following<wbr>Id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#id" class="tsd-kind-icon">id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#isallday" class="tsd-kind-icon">is<wbr>All<wbr>Day</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#isblock" class="tsd-kind-icon">is<wbr>Block</a></li>
@@ -2451,6 +2464,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#recurrenceid" class="tsd-kind-icon">recurrenceID</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#recurrencerule" class="tsd-kind-icon">recurrence<wbr>Rule</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttimezone" class="tsd-kind-icon">start<wbr>Timezone</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#subject" class="tsd-kind-icon">subject</a></li>
 						</ul>
 					</section>
@@ -2465,13 +2479,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:846</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:951</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Additional notes or context for the event that provide supplementary information.
-						Visible in event detail views or custom event templates.</p>
+						<p>Additional notes, agenda items, or context for the event provided to attendees.
+						Visible in event detail views, popups, or custom event templates.</p>
 					</div>
 				</div>
 			</section>
@@ -2481,13 +2495,53 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:831</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:936</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The exact date and time when the event concludes.
-						Determines the event&#39;s end point and duration in the scheduler.</p>
+						<p>The exact date and time when the event concludes, determining its duration in the scheduler.
+						Must be a valid JavaScript Date object later than the start time.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="endtimezone" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> end<wbr>Timezone</h3>
+				<div class="tsd-signature tsd-kind-icon">end<wbr>Timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:999</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The timezone context for the event end time (e.g., &#39;America/New_York&#39;).
+							Used to disambiguate the interpretation of <code>endTime</code> when timezone information is needed.
+						Must be omitted for all-day events.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="followingid" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> following<wbr>Id</h3>
+				<div class="tsd-signature tsd-kind-icon">following<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:983</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The parent event identifier linking this occurrence to a &quot;following events&quot; modified series.
+							Only set when this event was created via a &quot;Following Events&quot; edit/delete operation.
+							Used separately from recurrenceID to identify occurrences in the modified (following) branch.
+						When present, the event belongs to an independent recurrence series created by splitting at a specific date.</p>
 					</div>
 				</div>
 			</section>
@@ -2497,13 +2551,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:816</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:921</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A unique identifier for the event used for update and delete operations.
-						Can be a string or number depending on your data source.</p>
+						<p>A unique identifier for the event used in update and delete operations.
+						Can be a string or number depending on your data source configuration.</p>
 					</div>
 				</div>
 			</section>
@@ -2513,13 +2567,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>All<wbr>Day<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:836</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:941</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Marks the event as spanning the entire day rather than a specific time range.
-						All-day events appear in a separate section above timed events.</p>
+						<p>When true, the event spans the entire day and appears in the all-day row above timed events.
+						Ideal for holidays, birthdays, deadlines, or events without specific times.</p>
 					</div>
 				</div>
 			</section>
@@ -2529,13 +2583,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:856</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:961</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Marks the event as a time block that prevents scheduling other events in the same slot.
-						Commonly used for meetings, maintenance windows, or reserved time periods.</p>
+						<p>When true, marks the event as a time block preventing scheduling of other events in the same slot.
+						Commonly used for meetings, lunch breaks, maintenance windows, or reserved availability.</p>
 					</div>
 				</div>
 			</section>
@@ -2545,13 +2599,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Readonly<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:851</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:956</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Prevents the event from being edited or deleted by end users.
-						Useful for protecting important or locked events.</p>
+						<p>When true, prevents the event from being edited or deleted by end users.
+						Useful for protecting critical events or events managed by administrators only.</p>
 					</div>
 				</div>
 			</section>
@@ -2561,13 +2615,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:841</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:946</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The physical location or venue where the event occurs.
-						Displayed alongside the event details for user reference.</p>
+						<p>The physical location or venue where the event occurs (in-person or virtual meeting link).
+						Displayed alongside event details for attendee reference and planning.</p>
 					</div>
 				</div>
 			</section>
@@ -2577,13 +2631,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrence<wbr>Exception<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:871</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:976</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Recurrence exception rule string in RFC 5545 format (e.g., &#39;EXDATE=2024-01-01,2024-02-01&#39;).
-						Specifies dates or rules for excluding specific occurrences from a recurring event series.</p>
+						Specifies dates or rules for skipping or excluding specific occurrences from a recurring series.</p>
 					</div>
 				</div>
 			</section>
@@ -2593,13 +2647,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrenceID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:866</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:971</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The ID of the parent recurring event from which this exception was generated.
-						Used to link individual occurrences back to the original recurrence series.</p>
+						<p>The parent recurring event identifier linking this exception occurrence back to the original series.
+						Used internally to manage and track modified instances within recurring event series.</p>
 					</div>
 				</div>
 			</section>
@@ -2609,13 +2663,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrence<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:861</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:966</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Recurrence rule string in RFC 5545 format (e.g., &#39;FREQ=DAILY;INTERVAL=1;UNTIL=2025-12-31&#39;).
-						Used to define how the event repeats across days, weeks, months, or years.</p>
+						Defines event repetition patterns for daily, weekly, monthly, or yearly recurrence.</p>
 					</div>
 				</div>
 			</section>
@@ -2625,14 +2679,36 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:826</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:931</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The exact date and time when the event begins.
-						Determines the event&#39;s position and start point in the scheduler.</p>
+						<p>The exact date and time when the event begins, determining its position in the scheduler.
+						Must be a valid JavaScript Date object for proper scheduling.</p>
 					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="starttimezone" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>Timezone</h3>
+				<div class="tsd-signature tsd-kind-icon">start<wbr>Timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:991</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The timezone context for the event start time (e.g., &#39;America/New_York&#39;).
+							Used to disambiguate the interpretation of <code>startTime</code> when timezone information is needed.
+						Must be omitted for all-day events.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -2641,13 +2717,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:821</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:926</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The event title or heading displayed in the scheduler view.
-						Provides a brief summary of the event&#39;s purpose.</p>
+						<p>The event title or heading displayed in all scheduler views and event cards.
+						Provides a concise summary of the event&#39;s purpose or topic.</p>
 					</div>
 				</div>
 			</section>

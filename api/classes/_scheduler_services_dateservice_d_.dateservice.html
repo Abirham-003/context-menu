@@ -2367,6 +2367,9 @@ img {
 			<a href="_scheduler_services_dateservice_d_.dateservice.html" class="tsd-kind-icon">Date<wbr>Service</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a href="_scheduler_services_dateservice_d_.dateservice.html#normalizetime" class="tsd-kind-icon">normalize<wbr>Time</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_dateservice_d_.dateservice.html#sortbytimeandspan" class="tsd-kind-icon">sort<wbr>ByTime<wbr>And<wbr>Span</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -2540,6 +2543,9 @@ img {
 			<a href="../modules/_scheduler_services_dateservice_d_.html#ms_per_minute" class="tsd-kind-icon">MS_<wbr>PER_<wbr>MINUTE</a>
 		</li>
 		<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+			<a href="../modules/_scheduler_services_dateservice_d_.html#ms_per_second" class="tsd-kind-icon">MS_<wbr>PER_<wbr>SECOND</a>
+		</li>
+		<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 			<a href="../modules/_scheduler_services_dateservice_d_.html#week_length" class="tsd-kind-icon">WEEK_<wbr>LENGTH</a>
 		</li>
 	</ul>
@@ -2568,6 +2574,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_dateservice_d_.dateservice.html#normalizetime" class="tsd-kind-icon">normalize<wbr>Time</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_dateservice_d_.dateservice.html#sortbytimeandspan" class="tsd-kind-icon">sort<wbr>ByTime<wbr>And<wbr>Span</a></li>
 						</ul>
 					</section>
@@ -2631,12 +2638,56 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+				<a name="normalizetime" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> normalize<wbr>Time</h3>
+				<div class="tsd-signature tsd-kind-icon">normalize<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>hour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/services/DateService.d.ts:324</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Converts the given date string into a <code>Date</code> object and returns in <code>HH:mm</code> format.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>param</dt>
+						<dd><p>The date string from which the time should be normalized.</p>
+						</dd>
+						<dt>returns</dt>
+						<dd><p>A formatted time string in <code>HH:mm</code> format</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="tsd-type-declaration">
+					<h4>Type declaration</h4>
+					<ul class="tsd-parameters">
+						<li class="tsd-parameter-siganture">
+							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>hour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>hour: <span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 				<a name="sortbytimeandspan" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> sort<wbr>ByTime<wbr>And<wbr>Span</h3>
 				<div class="tsd-signature tsd-kind-icon">sort<wbr>ByTime<wbr>And<wbr>Span<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>events<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/services/DateService.d.ts:257</li>
+						<li>Defined in src/scheduler/services/DateService.d.ts:263</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2687,7 +2738,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:46</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:52</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2725,7 +2776,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:54</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:60</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2763,7 +2814,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:266</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:272</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2801,7 +2852,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:155</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:161</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2827,7 +2878,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:154</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:160</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2865,7 +2916,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:62</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:68</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2897,7 +2948,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:305</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:311</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2947,7 +2998,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:276</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:282</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2997,7 +3048,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:288</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:294</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3041,7 +3092,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:250</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:256</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3097,7 +3148,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:239</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:245</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3153,7 +3204,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:310</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:316</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3182,7 +3233,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:258</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:264</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3211,7 +3262,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:24</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:25</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3243,7 +3294,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:228</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:234</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3275,7 +3326,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:96</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:102</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3319,7 +3370,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:80</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:86</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3357,7 +3408,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:72</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:78</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3392,7 +3443,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:295</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:301</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3424,7 +3475,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:279</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:285</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3465,7 +3516,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:38</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:44</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3512,7 +3563,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:71</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:77</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3535,19 +3586,25 @@ img {
 				<a name="getrenderdates" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Render<wbr>Dates</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Render<wbr>Dates<span class="tsd-signature-symbol">(</span>viewType<span class="tsd-signature-symbol">: </span><a href="../modules/_scheduler_types_enums_d_.html#view" class="tsd-signature-type">View</a>, selectedDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, activeViewProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.activeviewprops.html" class="tsd-signature-type">ActiveViewProps</a>, startCellDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, endCellDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Render<wbr>Dates<span class="tsd-signature-symbol">(</span>viewType<span class="tsd-signature-symbol">: </span><a href="../modules/_scheduler_types_enums_d_.html#view" class="tsd-signature-type">View</a>, selectedDate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, activeViewProps<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.activeviewprops.html" class="tsd-signature-type">ActiveViewProps</a>, startCellDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, endCellDate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, timezone<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:35</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:41</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>Gets the dates to render for a specific view</p>
 							</div>
+							<dl class="tsd-comment-tags">
+								<dt>remarks</dt>
+								<dd><p>When a timezone is provided, cell start/end times are computed in that timezone.
+									This affects how the render dates are calculated relative to the selected date.</p>
+								</dd>
+							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -3571,15 +3628,12 @@ img {
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> startCellDate: <span class="tsd-signature-type">Date</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The current view start date</p>
-								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> endCellDate: <span class="tsd-signature-type">Date</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The current view end date</p>
-								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> timezone: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -3597,7 +3651,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:36</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:42</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3626,7 +3680,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:195</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:201</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3660,7 +3714,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:194</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:200</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3692,7 +3746,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:306</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:312</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3732,7 +3786,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:104</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:110</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3770,7 +3824,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:112</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:118</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3808,7 +3862,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:63</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:69</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3834,7 +3888,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:37</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:43</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3863,7 +3917,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:87</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:93</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3895,7 +3949,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:55</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:61</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3921,7 +3975,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:136</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:142</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3947,7 +4001,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:135</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:141</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3979,7 +4033,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:128</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:134</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4017,7 +4071,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:120</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:126</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4055,7 +4109,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:178</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:184</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4087,7 +4141,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:163</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:169</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4125,7 +4179,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:171</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:177</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4163,7 +4217,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:187</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:193</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4207,7 +4261,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:70</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:76</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4239,7 +4293,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:205</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:211</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4271,7 +4325,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:143</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:149</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4311,7 +4365,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:311</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:317</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4334,7 +4388,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:213</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:219</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4371,7 +4425,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:277</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:283</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4394,7 +4448,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:278</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:284</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4420,7 +4474,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/DateService.d.ts:221</li>
+								<li>Defined in src/scheduler/services/DateService.d.ts:227</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

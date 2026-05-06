@@ -2411,6 +2411,15 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Configures the appearance, behavior, and interaction of tooltips displayed over scheduler events and cells.
+						Provides granular control over tooltip positioning, animation, and custom content rendering for enhanced user guidance.
+					Enables customization of tooltip dimensions, open modes, and interactive behaviors through flexible property configuration.</p>
+				</div>
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
@@ -2457,7 +2466,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1324</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1520</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2490,10 +2499,10 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-interface">
 				<a name="onfiltertarget" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Filter<wbr>Target</h3>
-				<div class="tsd-signature tsd-kind-icon">on<wbr>Filter<wbr>Target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+				<div class="tsd-signature tsd-kind-icon">on<wbr>Filter<wbr>Target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">HTMLElement</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1333</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1529</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2515,7 +2524,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-event">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2525,7 +2534,7 @@ img {
 											<h5>event: <span class="tsd-signature-type">HTMLElement</span></h5>
 										</li>
 									</ul>
-									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4>
 								</li>
 							</ul>
 						</li>
@@ -2538,7 +2547,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">on<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Event</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1318</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1514</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2577,12 +2586,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">animation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TooltipAnimationOptions</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1306</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1501</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the same or different animation options to Tooltip while it is in open or close state.</p>
+						<p>Specifies animation settings for Tooltip open and close actions.
+						Enables smooth transitions with configurable effects, duration, and delay.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2597,12 +2607,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">arrow<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1312</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1508</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Shows or hides the tip pointer of Tooltip.</p>
+						<p>When enabled, displays a small arrow/pointer showing the direction of the Tooltip relative to its target.
+						Enhances visual clarity of tooltip positioning.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2617,12 +2628,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1260</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1451</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the content of the Tooltip.</p>
+						<p>Specifies the content of the Tooltip component (text, HTML, or custom React component).
+						Can be a static string or a dynamically rendered component.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2637,12 +2649,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">follow<wbr>Cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1287</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1480</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Allows the Tooltip to follow the mouse pointer movement over the specified target element.</p>
+						<p>When enabled, the Tooltip follows the mouse pointer movement over the target element.
+						Provides dynamic tooltip positioning based on cursor location.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2657,12 +2670,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1254</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1444</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the height of the Tooltip component.</p>
+						<p>Specifies the height of the Tooltip component in pixels or CSS units.
+						Use &#39;auto&#39; for automatic height based on content.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2677,13 +2691,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1300</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1494</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Determines whether the Tooltip is open or closed.
-						When set to true, the Tooltip will be displayed; when false, it will be hidden.</p>
+						<p>Controls the Tooltip&#39;s visibility state: true to display, false to hide completely.
+						Allows programmatic control over tooltip visibility.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2698,7 +2712,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">opens<wbr>On<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1281</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1473</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2724,12 +2738,13 @@ Custom :- The Tooltip opens when the trigger element is triggered by a custom ev
 				<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Position</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1266</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1458</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the position of the Tooltip element with respect to the target element.</p>
+						<p>Specifies the vertical and horizontal position of the Tooltip relative to the target element.
+						Options: &#39;TopCenter&#39;, &#39;TopLeft&#39;, &#39;TopRight&#39;, &#39;BottomCenter&#39;, &#39;BottomLeft&#39;, &#39;BottomRight&#39;, etc.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2744,12 +2759,13 @@ Custom :- The Tooltip opens when the trigger element is triggered by a custom ev
 				<div class="tsd-signature tsd-kind-icon">sticky<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1293</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1487</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Displays the Tooltip in an open state until closed manually.</p>
+						<p>When enabled, the Tooltip remains in an open state until manually closed by the user.
+						Provides persistent tooltip display for important information.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2764,12 +2780,13 @@ Custom :- The Tooltip opens when the trigger element is triggered by a custom ev
 				<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1248</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1437</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the width of the Tooltip component.</p>
+						<p>Specifies the width of the Tooltip component in pixels or CSS units.
+						Use &#39;auto&#39; for automatic width based on content.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>

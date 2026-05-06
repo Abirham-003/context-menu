@@ -2384,7 +2384,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Arguments for custom date range renderer.</p>
+					<p>Represents the date range context for custom header rendering in the scheduler.
+						Provides start date, end date, and view information to enable context-aware date range displays.
+					Enables developers to create custom date range representations or localized date formatting strategies.</p>
 				</div>
 			</div>
 		</section>
@@ -2419,12 +2421,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1352</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1557</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The end date of the current visible range.</p>
+						<p>The end date of the currently visible date range in the scheduler.
+						Indicates the end of the period displayed by the active view.</p>
 					</div>
 				</div>
 			</section>
@@ -2434,12 +2437,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1348</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1552</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The start date of the current visible range.</p>
+						<p>The start date of the currently visible date range in the scheduler.
+						Indicates the beginning of the period displayed by the active view.</p>
 					</div>
 				</div>
 			</section>
@@ -2449,12 +2453,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">view<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1356</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1562</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Active view name (e.g., &#39;Day&#39;, &#39;Week&#39;, custom view name).</p>
+						<p>The name of the currently active view type (&#39;Day&#39;, &#39;Week&#39;, &#39;WorkWeek&#39;, &#39;Month&#39;, or custom).
+						Indicates which view is displaying the date range.</p>
 					</div>
 				</div>
 			</section>

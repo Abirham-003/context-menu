@@ -2393,8 +2393,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Event arguments provided when a scheduler cell is clicked or tapped.
-					Contains the cell&#39;s time range and interaction details for custom event handling.</p>
+					<p>Event arguments provided when a scheduler cell is clicked or tapped on mobile devices.
+						Contains the cell&#39;s time range, all-day status, and interaction details for custom event handling and validation.
+					Enables developers to implement custom cell selection logic or prevent default cell click behaviors.</p>
 				</div>
 			</div>
 		</section>
@@ -2432,12 +2433,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:911</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1056</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Set to true to cancel the default cell click behavior (e.g., preventing event creation dialogs).</p>
+						<p>Set to true to cancel the default cell click behavior (e.g., preventing auto-opening event creation dialogs).
+						Allows custom handling of cell clicks without triggering default actions.</p>
 					</div>
 				</div>
 			</section>
@@ -2447,12 +2449,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:907</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1051</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The DOM element that was clicked, enabling direct manipulation or inspection if needed.</p>
+						<p>The DOM element that was clicked, enabling direct manipulation or style inspection if needed.
+						Useful for custom styling or finding parent elements.</p>
 					</div>
 				</div>
 			</section>
@@ -2462,12 +2465,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:899</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1041</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The end time of the clicked time slot or date cell.</p>
+						<p>The end time of the clicked time slot or date cell.
+						Represents the end of the time range for the selected cell.</p>
 					</div>
 				</div>
 			</section>
@@ -2477,12 +2481,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>All<wbr>Day<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:903</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1046</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Indicates whether the clicked cell belongs to the all-day row (true) or a timed slot (false).</p>
+						<p>Indicates whether the clicked cell belongs to the all-day row (true) or a timed slot (false).
+						Useful for determining the type of cell and applying appropriate event creation logic.</p>
 					</div>
 				</div>
 			</section>
@@ -2492,12 +2497,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">native<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">MouseEvent</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:891</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1031</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The native MouseEvent object triggered by the cell interaction.</p>
+						<p>The native browser MouseEvent triggered by the cell interaction.
+						Provides access to event properties like button, coordinates, and modifier keys.</p>
 					</div>
 				</div>
 			</section>
@@ -2507,12 +2513,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:895</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1036</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The start time of the clicked time slot or date cell.</p>
+						<p>The start time of the clicked time slot or date cell.
+						Represents the beginning of the time range for the selected cell.</p>
 					</div>
 				</div>
 			</section>

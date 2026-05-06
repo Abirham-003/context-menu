@@ -2441,7 +2441,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">calculate<wbr>Event<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/services/PositioningService.d.ts:73</li>
+						<li>Defined in src/scheduler/services/PositioningService.d.ts:88</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2468,13 +2468,13 @@ img {
 				<a name="calculateeventposition" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> calculate<wbr>Event<wbr>Position</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Event<wbr>Position<span class="tsd-signature-symbol">(</span>eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CSSProperties</span></li>
+					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Event<wbr>Position<span class="tsd-signature-symbol">(</span>eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cellHeight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CSSProperties</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/PositioningService.d.ts:20</li>
+								<li>Defined in src/scheduler/services/PositioningService.d.ts:21</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2508,6 +2508,9 @@ img {
 									<p>The end hour of the scheduler</p>
 								</div>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> cellHeight: <span class="tsd-signature-type">number</span></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CSSProperties</span></h4>
 						<p>CSS properties for positioning</p>
@@ -2518,13 +2521,13 @@ img {
 				<a name="calculateheight" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> calculate<wbr>Height</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Height<span class="tsd-signature-symbol">(</span>eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Height<span class="tsd-signature-symbol">(</span>eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cellHeight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/PositioningService.d.ts:65</li>
+								<li>Defined in src/scheduler/services/PositioningService.d.ts:80</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2558,9 +2561,16 @@ img {
 									<p>The end hour of the scheduler</p>
 								</div>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> cellHeight: <span class="tsd-signature-type">number</span></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						<p>The height as a CSS value</p>
+						<p><strong>Note on Dynamic Cell Heights:</strong>
+							The cellHeight parameter enables this method to correctly calculate event
+							heights based on actual DOM cell dimensions rather than hardcoded constants.
+						This is essential for supporting CSS-customized cell heights (e.g., 100px cells).</p>
 					</li>
 				</ul>
 			</section>
@@ -2568,13 +2578,13 @@ img {
 				<a name="calculatepositionstyles" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> calculate<wbr>Position<wbr>Styles</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Position<wbr>Styles<span class="tsd-signature-symbol">(</span>eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, renderDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, timeScale<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CSSProperties</span></li>
+					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Position<wbr>Styles<span class="tsd-signature-symbol">(</span>eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, renderDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, timeScale<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, cellHeight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CSSProperties</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/PositioningService.d.ts:46</li>
+								<li>Defined in src/scheduler/services/PositioningService.d.ts:48</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2614,6 +2624,9 @@ img {
 									<p>The end hour of the scheduler (for non-allday events)</p>
 								</div>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> cellHeight: <span class="tsd-signature-type">number</span></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CSSProperties</span></h4>
 						<p>CSS properties for positioning</p>
@@ -2624,13 +2637,13 @@ img {
 				<a name="calculatetopposition" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> calculate<wbr>Top<wbr>Position</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Top<wbr>Position<span class="tsd-signature-symbol">(</span>startTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					<li class="tsd-signature tsd-kind-icon">calculate<wbr>Top<wbr>Position<span class="tsd-signature-symbol">(</span>startTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cellHeight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/PositioningService.d.ts:55</li>
+								<li>Defined in src/scheduler/services/PositioningService.d.ts:64</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2658,9 +2671,17 @@ img {
 									<p>The start hour of the scheduler</p>
 								</div>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> cellHeight: <span class="tsd-signature-type">number</span></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						<p>The top position as a CSS value</p>
+						<p><strong>Note on Dynamic Cell Heights:</strong>
+							The cellHeight parameter allows this method to adapt to CSS customizations
+							of cell dimensions. When cellHeight is provided and non-zero, it is used
+							instead of the hardcoded ROW_HEIGHT constant. This ensures that event
+						positioning correctly accounts for custom cell heights applied via CSS.</p>
 					</li>
 				</ul>
 			</section>
@@ -2674,7 +2695,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/PositioningService.d.ts:30</li>
+								<li>Defined in src/scheduler/services/PositioningService.d.ts:31</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2738,7 +2759,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/PositioningService.d.ts:74</li>
+								<li>Defined in src/scheduler/services/PositioningService.d.ts:89</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>

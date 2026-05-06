@@ -2414,8 +2414,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Props passed to the SchedulerHeader renderer.
-					Use these props to customize the header bar</p>
+					<p>Props passed to custom header renderers in the scheduler, enabling full header bar customization.
+						Provides pre-configured button instances, templates, and configuration objects for comprehensive header control.
+					Enables developers to customize, extend, or completely replace the default scheduler header with custom implementations.</p>
 				</div>
 			</div>
 		</section>
@@ -2460,7 +2461,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1472</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1708</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2479,13 +2480,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">date<wbr>Range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1496</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1728</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Pre-configured Date Range button instance.
-						It contains the fully configured date range button that can be repositioned or excluded.</p>
+						<p>A fully configured date range button instance ready for rendering.
+						Can be repositioned within the toolbar or excluded from display as needed.</p>
 					</div>
 				</div>
 			</section>
@@ -2495,13 +2496,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">date<wbr>Range<wbr>Props<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.daterangebuttonprops.html" class="tsd-signature-type">DateRangeButtonProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1461</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1697</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Date range button configuration.
-						Set to <code>null</code> to hide the button completely.</p>
+						<p>Configuration object for the date range button in the scheduler header.
+						Set to <code>null</code> to completely hide the button from the toolbar.</p>
 					</div>
 				</div>
 			</section>
@@ -2511,12 +2512,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">date<wbr>Range<wbr>Template<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_scheduler_types_d_.daterangeprops.html" class="tsd-signature-type">DateRangeProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1441</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1677</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>To customize the date range in header bar.</p>
+						<p>Provides a custom React component to render the date range display in the scheduler header.
+						Enables custom date range formatting or localization.</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2547,13 +2549,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1490</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1723</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Pre-configured Next button instance.
-						It contains the fully configured next button that can be repositioned or excluded.</p>
+						<p>A fully configured &quot;Next&quot; navigation button instance ready for rendering.
+						Can be repositioned within the toolbar or excluded from display as needed.</p>
 					</div>
 				</div>
 			</section>
@@ -2563,13 +2565,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">next<wbr>Props<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.toolbarbuttonprops.html" class="tsd-signature-type">ToolbarButtonProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1456</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1692</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Next button configuration.
-						Set to <code>null</code> to hide the button completely.</p>
+						<p>Configuration object for the &quot;Next&quot; navigation button in the scheduler header.
+						Set to <code>null</code> to completely hide the button from the toolbar.</p>
 					</div>
 				</div>
 			</section>
@@ -2579,13 +2581,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">overflow<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OverflowMode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1437</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1672</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Configures toolbar overflow strategy.
-						Defaults to OverflowMode.Popup.</p>
+						<p>Configures how toolbar items are displayed when space is limited: Popup, Dropdown, or Scroll.
+						Defaults to Popup mode for optimal space management.</p>
 					</div>
 				</div>
 			</section>
@@ -2595,13 +2597,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">previous<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1484</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1718</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Pre-configured Previous button instance.
-						It contains the fully configured previous button that can be repositioned or excluded.</p>
+						<p>A fully configured &quot;Previous&quot; navigation button instance ready for rendering.
+						Can be repositioned within the toolbar or excluded from display as needed.</p>
 					</div>
 				</div>
 			</section>
@@ -2611,13 +2613,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">previous<wbr>Props<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.toolbarbuttonprops.html" class="tsd-signature-type">ToolbarButtonProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1451</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1687</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Previous button configuration.
-						Set to <code>null</code> to hide the button completely.</p>
+						<p>Configuration object for the &quot;Previous&quot; navigation button in the scheduler header.
+						Set to <code>null</code> to completely hide the button from the toolbar.</p>
 					</div>
 				</div>
 			</section>
@@ -2627,13 +2629,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">today<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1478</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1713</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Pre-configured Today button instance.
-						It contains the fully configured today button that can be repositioned or excluded.</p>
+						<p>A fully configured &quot;Today&quot; button instance ready for rendering.
+						Can be repositioned within the toolbar or excluded from display as needed.</p>
 					</div>
 				</div>
 			</section>
@@ -2643,13 +2645,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">today<wbr>Props<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.toolbarbuttonprops.html" class="tsd-signature-type">ToolbarButtonProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1446</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1682</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Today button configuration.
-						Set to <code>null</code> to hide the button completely.</p>
+						<p>Configuration object for the &quot;Today&quot; button in the scheduler header.
+						Set to <code>null</code> to completely hide the button from the toolbar.</p>
 					</div>
 				</div>
 			</section>
@@ -2659,13 +2661,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">view<wbr>Switcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1502</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1733</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Pre-configured View Switcher instance.
-						It contains the fully configured view switcher that can be repositioned or excluded.</p>
+						<p>A fully configured view switcher instance ready for rendering.
+						Can be repositioned within the toolbar or excluded from display as needed.</p>
 					</div>
 				</div>
 			</section>
@@ -2675,13 +2677,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">view<wbr>Switcher<wbr>Props<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.viewbuttonprops.html" class="tsd-signature-type">ViewButtonProps</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1466</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1702</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>View switcher configuration.
-						Set to <code>null</code> to hide the button completely.</p>
+						<p>Configuration object for the view switcher button in the scheduler header.
+						Set to <code>null</code> to completely hide the button from the toolbar.</p>
 					</div>
 				</div>
 			</section>

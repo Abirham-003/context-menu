@@ -2382,7 +2382,8 @@ img {
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
 					<p>Represents a single scheduler cell for custom rendering in day, week, or month views.
-					Provides context about the cell&#39;s date and type for template rendering.</p>
+						Provides context about the cell&#39;s date and type to enable conditional rendering logic and styling.
+					Enables developers to implement custom cell templates with awareness of view type and time range.</p>
 				</div>
 			</div>
 		</section>
@@ -2416,12 +2417,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:973</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1129</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The start date and time of the scheduler cell.</p>
+						<p>The start date and time of the scheduler cell, determining its position in the view.
+						Used for cell positioning, event assignment, and custom rendering logic.</p>
 					</div>
 				</div>
 			</section>
@@ -2431,13 +2433,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:978</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1134</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Identifies the cell type to allow conditional rendering logic.
-						Values: &#39;monthCell&#39; for month view cells or &#39;workCell&#39; for time-slot cells.</p>
+						<p>Identifies the cell type for conditional rendering and styling logic.
+						Values: &#39;monthCell&#39; for month view or &#39;workCell&#39; for time-slot cells in day/week views.</p>
 					</div>
 				</div>
 			</section>

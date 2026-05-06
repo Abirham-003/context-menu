@@ -2433,13 +2433,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1023</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1184</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables the event resize functionality globally.
-						When disabled, events cannot be resized by users.</p>
+						<p>Enables or disables the ability to resize events throughout the scheduler.
+						When disabled, resize handles are hidden and event durations cannot be modified.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2454,14 +2454,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Resizable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1055</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1212</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables the ability to grab and drag the end edge of an event.
-							When false, users cannot modify the event&#39;s end time via the resize handle.
-						Useful for restricting modifications to only the start time.</p>
+						<p>Enables or disables the ability to drag the end edge of an event to change its end time.
+						When disabled, the end time cannot be modified through resizing.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2476,14 +2475,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1031</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1191</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the snapping granularity in minutes while resizing events.
-							For example, an interval of 15 will snap resize actions to 15-minute increments.
-						When not specified, defaults to the timeScale interval divided by slotCount.</p>
+						<p>Specifies the snapping granularity in minutes while resizing events (e.g., 15 for 15-minute increments).
+						When not specified, defaults to the timeScale interval divided by slotCount for optimal alignment.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2498,14 +2496,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">resize<wbr>ToZero<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1039</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1198</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Allows users to resize an event to a zero-length span (where start time equals end time).
-							When false, the minimum event duration is enforced as 1 interval unit.
-						Useful for preventing accidental creation of invalid time ranges.</p>
+						<p>When enabled, allows events to be resized to zero duration (start time equals end time).
+						When disabled, the minimum event duration is enforced as one interval unit to prevent invalid states.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2517,10 +2514,10 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="scroll" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> scroll</h3>
-				<div class="tsd-signature tsd-kind-icon">scroll<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.scrollprops.html" class="tsd-signature-type">ScrollProps</a></div>
+				<div class="tsd-signature tsd-kind-icon">scroll<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.schedulerdragscrollprops.html" class="tsd-signature-type">SchedulerDragScrollProps</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1061</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1218</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2536,14 +2533,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Resizable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1047</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1205</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enables or disables the ability to grab and drag the start edge of an event.
-							When false, users cannot modify the event&#39;s start time via the resize handle.
-						Useful for restricting modifications to only the end time.</p>
+						<p>Enables or disables the ability to drag the start edge of an event to change its start time.
+						When disabled, the start time cannot be modified through resizing.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>

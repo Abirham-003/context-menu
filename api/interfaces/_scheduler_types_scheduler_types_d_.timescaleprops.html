@@ -2391,7 +2391,8 @@ img {
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
 					<p>Configures how time slots are divided and rendered in day, week, and work week views.
-					Supports custom intervals, slot counts, and templated display of time labels.</p>
+						Supports custom intervals, slot counts, and templated display of time labels with major and minor slot customizations.
+					Enables granular control over time granularity and visual representation of scheduler time divisions.</p>
 				</div>
 			</div>
 		</section>
@@ -2428,13 +2429,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:655</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:730</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Toggles the visibility and functionality of time slots in the scheduler view.
-						When disabled, the time scale section is hidden entirely.</p>
+						<p>Enables or disables the time scale (hour/minute divisions) in day, week, and work week views.
+						When disabled, the time scale section is completely hidden from the scheduler.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2449,13 +2450,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:662</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:737</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Specifies the duration of each time slot in minutes (e.g., 30 for 30-minute slots).
-						Smaller intervals provide finer granularity for event scheduling.</p>
+						<p>Specifies the interval duration for each time slot in minutes (e.g., 30 for 30-minute slots).
+						Smaller intervals provide finer scheduling granularity; larger intervals simplify the time grid.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2470,13 +2471,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">major<wbr>Slot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_scheduler_types_d_.timeslotprops.html" class="tsd-signature-type">TimeSlotProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:676</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:751</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Accepts a custom React component to render the primary (hour) time labels.
-						Enables custom formatting or styling of major time divisions.</p>
+						<p>Provides a custom React component to render the primary (hourly) time labels in the scheduler&#39;s time scale.
+						Enables custom formatting, styling, or localization of major time divisions.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2512,13 +2513,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">minor<wbr>Slot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_scheduler_types_d_.timeslotprops.html" class="tsd-signature-type">TimeSlotProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:683</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:758</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Accepts a custom React component to render the secondary (minute) time labels within each major slot.
-						Enables detailed time formatting or visual differentiation.</p>
+						<p>Provides a custom React component to render secondary (minute-level) time labels within each major time slot.
+						Enables detailed time formatting, custom styling, or alternative time label representations.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2554,13 +2555,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">slot<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:669</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:744</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Divides each major time slot into this many minor subdivisions.
-						A value of 2 creates two 30-minute slots within each 60-minute major slot.</p>
+						<p>Number of subdivisions for each major time slot interval (e.g., a value of 2 creates two 30-minute slots within 60 minutes).
+						Controls the granularity of minor time divisions visible in the scheduler&#39;s time scale.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>

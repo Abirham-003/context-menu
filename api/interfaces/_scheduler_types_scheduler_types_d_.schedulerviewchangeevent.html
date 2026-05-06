@@ -2379,7 +2379,8 @@ img {
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
 					<p>Event arguments provided when the active view changes in the scheduler.
-					Fired when users switch between Day, Week, Month, or other view types.</p>
+						Fired when users switch between Day, Week, Month, or other view types with the new view identifier.
+					Enables developers to track view changes for analytics or load view-specific data.</p>
 				</div>
 			</div>
 		</section>
@@ -2412,12 +2413,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1230</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1411</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The name or identifier of the newly active view (e.g., &#39;Day&#39;, &#39;Week&#39;, &#39;Month&#39;).</p>
+						<p>The name or identifier of the newly active view (e.g., &#39;Day&#39;, &#39;Week&#39;, &#39;WorkWeek&#39;, &#39;Month&#39;).
+						Useful for tracking view changes or loading view-specific data.</p>
 					</div>
 				</div>
 			</section>

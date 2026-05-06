@@ -2393,7 +2393,9 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Field configuration for the editor. Used to render default or custom inputs in rows.</p>
+					<p>Field configuration object for customizing individual editor inputs in the scheduler&#39;s event editing dialog.
+						Defines field visibility, custom components, component properties, and validation rules for granular editor control.
+					Enables developers to create specialized field inputs or override default field rendering with custom implementations.</p>
 				</div>
 			</div>
 		</section>
@@ -2431,12 +2433,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">class<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1631</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1895</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Additional class name for the field container.</p>
+						<p>Adds custom CSS class names to the field container element.
+						Enables custom styling of individual fields through external CSS.</p>
 					</div>
 				</div>
 			</section>
@@ -2446,12 +2449,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">component<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">React.ReactNode</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1635</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1900</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Custom React component to render instead of the default field component.</p>
+						<p>A custom React component to render instead of the default field input component.
+						Enables specialized field rendering for custom data types or interactions.</p>
 					</div>
 				</div>
 			</section>
@@ -2461,12 +2465,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1621</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1883</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Unique field identifier used for mapping and validation (e.g., &#39;subject&#39;, &#39;location&#39;).</p>
+						<p>Unique field identifier used for data binding and validation (e.g., &#39;subject&#39;, &#39;location&#39;, &#39;description&#39;).
+						Must correspond to a property in the event data model.</p>
 					</div>
 				</div>
 			</section>
@@ -2476,12 +2481,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1639</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1905</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Props for overriding or adding additional properties for the default fields.</p>
+						<p>Props to override or extend the default field component&#39;s properties.
+						Enables fine-grained customization without replacing the entire component.</p>
 					</div>
 				</div>
 			</section>
@@ -2491,12 +2497,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">validation<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ValidationRules</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1643</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1910</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Validation rules for the field (e.g., { required: [true, &#39;Field is required&#39;] }).</p>
+						<p>Validation rules for the field enforcing required values, patterns, or constraints.
+						Applied before saving event data to ensure data integrity (e.g., { required: [true, &#39;Field is required&#39;] }).</p>
 					</div>
 				</div>
 			</section>
@@ -2506,12 +2513,13 @@ img {
 				<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1627</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1890</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Controls field visibility. Set to false to hide the field.</p>
+						<p>Controls whether the field is displayed in the editor form.
+						Set to false to hide the field from the editor while maintaining its data structure.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
