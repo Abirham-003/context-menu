@@ -2601,10 +2601,10 @@ img {
 					<a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timescale" class="tsd-kind-icon">time<wbr>Scale</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezonedata" class="tsd-kind-icon">time<wbr>Zone<wbr>Data</a>
+					<a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezone" class="tsd-kind-icon">timezone</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezone" class="tsd-kind-icon">timezone</a>
+					<a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezonedata" class="tsd-kind-icon">timezone<wbr>Data</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a href="_scheduler_types_internal_interface_d_.activeviewprops.html#view" class="tsd-kind-icon">view</a>
@@ -2776,8 +2776,8 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#tabindex" class="tsd-kind-icon">tab<wbr>Index</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timeformat" class="tsd-kind-icon">time<wbr>Format</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timescale" class="tsd-kind-icon">time<wbr>Scale</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezonedata" class="tsd-kind-icon">time<wbr>Zone<wbr>Data</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezone" class="tsd-kind-icon">timezone</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#timezonedata" class="tsd-kind-icon">timezone<wbr>Data</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#view" class="tsd-kind-icon">view</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#weekday" class="tsd-kind-icon">week<wbr>Day</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_internal_interface_d_.activeviewprops.html#weekrule" class="tsd-kind-icon">week<wbr>Rule</a></li>
@@ -5040,29 +5040,6 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-				<a name="timezonedata" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> time<wbr>Zone<wbr>Data</h3>
-				<div class="tsd-signature tsd-kind-icon">time<wbr>Zone<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
-				<aside class="tsd-sources">
-					<p>Inherited from <a href="_scheduler_scheduler_d_.ischeduler.html">IScheduler</a>.<a href="_scheduler_scheduler_d_.ischeduler.html#timezonedata">timeZoneData</a></p>
-					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.ts:527</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Optional list of timezones to display in the editor timezone selector.
-							Each item includes a display text and timezone value (e.g., [{ text: &#39;Eastern&#39;, value: &#39;America/New_York&#39; }]).
-						If not provided, falls back to <code>Timezone.getCommonTimezones()</code>.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>undefined</p>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="timezone" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> timezone</h3>
 				<div class="tsd-signature tsd-kind-icon">timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -5081,6 +5058,29 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>undefined (uses client system timezone)</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="timezonedata" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> timezone<wbr>Data</h3>
+				<div class="tsd-signature tsd-kind-icon">timezone<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_scheduler_scheduler_d_.ischeduler.html">IScheduler</a>.<a href="_scheduler_scheduler_d_.ischeduler.html#timezonedata">timezoneData</a></p>
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.ts:527</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Optional list of timezones to display in the editor timezone selector.
+							Each item includes a display text and timezone value (e.g., [{ text: &#39;Eastern&#39;, value: &#39;America/New_York&#39; }]).
+						If not provided, falls back to <code>Timezone.getCommonTimezones()</code>.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
 						</dd>
 					</dl>
 				</div>
