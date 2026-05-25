@@ -2479,7 +2479,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:948</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:977</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2495,7 +2495,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:933</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:962</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2511,14 +2511,16 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:996</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1029</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The timezone context for the event end time (e.g., &#39;America/New_York&#39;).
-							Used to disambiguate the interpretation of <code>endTime</code> when timezone information is needed.
-						Must be omitted for all-day events.</p>
+						<p>The IANA timezone identifier for the event end (for example, &#39;America/New_York&#39;).
+							When provided, the scheduler treats <code>endTime</code> as occurring in that timezone and
+							converts it to the user&#39;s/local timezone for display, sorting, and duration calculations.
+							Format: IANA TZ database name (e.g. &#39;Europe/London&#39;, &#39;America/Los_Angeles&#39;).
+						Example: { endTime: new Date(&#39;2026-05-15T10:00:00&#39;), endTimezone: &#39;America/New_York&#39; }</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2533,7 +2535,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">following<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:980</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1009</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2551,7 +2553,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:918</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:947</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2567,7 +2569,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>All<wbr>Day<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:938</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:967</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2583,7 +2585,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:958</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:987</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2599,7 +2601,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Readonly<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:953</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:982</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2615,7 +2617,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:943</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:972</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2631,7 +2633,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrence<wbr>Exception<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:973</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1002</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2647,7 +2649,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrenceID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:968</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:997</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2663,7 +2665,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrence<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:963</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:992</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2679,7 +2681,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:928</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:957</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2695,14 +2697,16 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:988</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1019</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The timezone context for the event start time (e.g., &#39;America/New_York&#39;).
-							Used to disambiguate the interpretation of <code>startTime</code> when timezone information is needed.
-						Must be omitted for all-day events.</p>
+						<p>The IANA timezone identifier for the event start (for example, &#39;America/New_York&#39;).
+							When provided, the scheduler treats <code>startTime</code> as occurring in that timezone and
+							converts it to the user&#39;s/local timezone for display, sorting, and duration calculations.
+							Format: IANA TZ database name (e.g. &#39;Europe/London&#39;, &#39;America/Los_Angeles&#39;).
+						Example: { startTime: new Date(&#39;2026-05-15T09:00:00&#39;), startTimezone: &#39;America/New_York&#39; }</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2717,7 +2721,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:923</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:952</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

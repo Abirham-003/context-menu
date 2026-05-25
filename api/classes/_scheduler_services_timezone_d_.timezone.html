@@ -2366,7 +2366,7 @@ img {
 		<li class="current tsd-kind-class tsd-parent-kind-external-module">
 			<a href="_scheduler_services_timezone_d_.timezone.html" class="tsd-kind-icon">Timezone</a>
 			<ul>
-				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_timezone_d_.timezone.html#timezonedata" class="tsd-kind-icon">timezone<wbr>Data</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -2376,7 +2376,10 @@ img {
 					<a href="_scheduler_services_timezone_d_.timezone.html#convert" class="tsd-kind-icon">convert</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a href="_scheduler_services_timezone_d_.timezone.html#getcommontimezones" class="tsd-kind-icon">get<wbr>Common<wbr>Timezones</a>
+					<a href="_scheduler_services_timezone_d_.timezone.html#getlocaltimezonename" class="tsd-kind-icon">get<wbr>Local<wbr>Timezone<wbr>Name</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a href="_scheduler_services_timezone_d_.timezone.html#gettimezonedata" class="tsd-kind-icon">get<wbr>Timezone<wbr>Data</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_timezone_d_.timezone.html#offset" class="tsd-kind-icon">offset</a>
@@ -2413,10 +2416,10 @@ img {
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#timezonedata" class="tsd-kind-icon">timezone<wbr>Data</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#timezonedata" class="tsd-kind-icon">timezone<wbr>Data</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -2424,7 +2427,8 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#add" class="tsd-kind-icon">add</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#convert" class="tsd-kind-icon">convert</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#getcommontimezones" class="tsd-kind-icon">get<wbr>Common<wbr>Timezones</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#getlocaltimezonename" class="tsd-kind-icon">get<wbr>Local<wbr>Timezone<wbr>Name</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#gettimezonedata" class="tsd-kind-icon">get<wbr>Timezone<wbr>Data</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#offset" class="tsd-kind-icon">offset</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#remove" class="tsd-kind-icon">remove</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_timezone_d_.timezone.html#removelocaloffset" class="tsd-kind-icon">remove<wbr>Local<wbr>Offset</a></li>
@@ -2433,12 +2437,12 @@ img {
 				</div>
 			</section>
 		</section>
-		<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 				<a name="timezonedata" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> timezone<wbr>Data</h3>
-				<div class="tsd-signature tsd-kind-icon">timezone<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> timezone<wbr>Data</h3>
+				<div class="tsd-signature tsd-kind-icon">timezone<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in src/scheduler/services/Timezone.d.ts:10</li>
@@ -2483,7 +2487,7 @@ img {
 							<li>
 								<h5>timezone: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>Target IANA timezone name or &#39;UTC&#39;</p>
+									<p>Target IANA timezone name</p>
 								</div>
 							</li>
 						</ul>
@@ -2538,10 +2542,10 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-				<a name="getcommontimezones" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Common<wbr>Timezones</h3>
+				<a name="getlocaltimezonename" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Local<wbr>Timezone<wbr>Name</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>Common<wbr>Timezones<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Local<wbr>Timezone<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -2555,8 +2559,25 @@ img {
 								<p>Get a list of common IANA timezone identifiers for use in editor/UI selectors.</p>
 							</div>
 						</div>
-						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						<p>Array of IANA timezone names sorted alphabetically</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<a name="gettimezonedata" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Timezone<wbr>Data</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Timezone<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/services/Timezone.d.ts:63</li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -2590,7 +2611,7 @@ img {
 							<li>
 								<h5>timezone: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>IANA timezone name (e.g., &#39;America/New_York&#39;) or &#39;UTC&#39;</p>
+									<p>IANA timezone name (e.g., &#39;America/New_York&#39;)</p>
 								</div>
 							</li>
 						</ul>
@@ -2630,7 +2651,7 @@ img {
 							<li>
 								<h5>timezone: <span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>Source IANA timezone name or &#39;UTC&#39;</p>
+									<p>Source IANA timezone name</p>
 								</div>
 							</li>
 						</ul>

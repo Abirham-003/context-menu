@@ -2376,6 +2376,9 @@ img {
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#cloneeventposition" class="tsd-kind-icon">clone<wbr>Event<wbr>Position</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a href="_scheduler_services_eventservice_d_.eventservice.html#converteventtime" class="tsd-kind-icon">convert<wbr>Event<wbr>Time</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#convertoverlapgroupstoeventgroups" class="tsd-kind-icon">convert<wbr>Overlap<wbr>Groups<wbr>ToEvent<wbr>Groups</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -2428,6 +2431,9 @@ img {
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#prioritizeevents" class="tsd-kind-icon">prioritize<wbr>Events</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a href="_scheduler_services_eventservice_d_.eventservice.html#processagendaevents" class="tsd-kind-icon">process<wbr>Agenda<wbr>Events</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#processcloneevent" class="tsd-kind-icon">process<wbr>Clone<wbr>Event</a>
@@ -2490,6 +2496,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#calculateoverlappingevents" class="tsd-kind-icon">calculate<wbr>Overlapping<wbr>Events</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#checkeventoverlap" class="tsd-kind-icon">check<wbr>Event<wbr>Overlap</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#cloneeventposition" class="tsd-kind-icon">clone<wbr>Event<wbr>Position</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#converteventtime" class="tsd-kind-icon">convert<wbr>Event<wbr>Time</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#convertoverlapgroupstoeventgroups" class="tsd-kind-icon">convert<wbr>Overlap<wbr>Groups<wbr>ToEvent<wbr>Groups</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#eventsoverlap" class="tsd-kind-icon">events<wbr>Overlap</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#filtereventsbydaterange" class="tsd-kind-icon">filter<wbr>Events<wbr>ByDate<wbr>Range</a></li>
@@ -2508,6 +2515,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#ismultidayevent" class="tsd-kind-icon">is<wbr>Multi<wbr>Day<wbr>Event</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#mapeventdata" class="tsd-kind-icon">map<wbr>Event<wbr>Data</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#prioritizeevents" class="tsd-kind-icon">prioritize<wbr>Events</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processagendaevents" class="tsd-kind-icon">process<wbr>Agenda<wbr>Events</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processcloneevent" class="tsd-kind-icon">process<wbr>Clone<wbr>Event</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processdayevents" class="tsd-kind-icon">process<wbr>Day<wbr>Events</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processtimeslotcloneevent" class="tsd-kind-icon">process<wbr>Time<wbr>Slot<wbr>Clone<wbr>Event</a></li>
@@ -2594,7 +2602,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:157</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:166</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2649,6 +2657,51 @@ img {
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CSSProperties</span></h4>
 						<p>Inline style object containing top, left, and width (in pixels).</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<a name="converteventtime" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> convert<wbr>Event<wbr>Time</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<li class="tsd-signature tsd-kind-icon">convert<wbr>Event<wbr>Time<span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, tz<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, eventTz<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/services/EventService.d.ts:203</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Converts a single event time from scheduler timezone to event timezone (or vice versa)
+								Returns the original time if any parameter is missing.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> time: <span class="tsd-signature-type">Date</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The date/time to convert</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> tz: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The source timezone (typically scheduler timezone)</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> eventTz: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The target event timezone</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						<p>Converted date or original/undefined</p>
 					</li>
 				</ul>
 			</section>
@@ -2860,7 +2913,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:133</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:142</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2883,7 +2936,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:127</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:136</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2915,7 +2968,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:168</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:177</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2953,7 +3006,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:134</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:143</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2976,7 +3029,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:135</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:144</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3002,7 +3055,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:143</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:152</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3101,7 +3154,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:113</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:122</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3183,7 +3236,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:120</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:129</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3273,6 +3326,45 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<a name="processagendaevents" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> process<wbr>Agenda<wbr>Events</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<li class="tsd-signature tsd-kind-icon">process<wbr>Agenda<wbr>Events<span class="tsd-signature-symbol">(</span>events<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/services/EventService.d.ts:113</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Processes events specifically for Agenda View to calculate segments.
+								Matches EJ2 AgendaBase.processAgendaEvents logic.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>events: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Events to process</p>
+								</div>
+							</li>
+							<li>
+								<h5>dates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Current view dates</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>Processed events grouped by date key</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 				<a name="processcloneevent" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> process<wbr>Clone<wbr>Event</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -3282,7 +3374,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:159</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:168</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3332,7 +3424,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:144</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:153</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3358,7 +3450,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:160</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:169</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3405,7 +3497,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:184</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:193</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3544,7 +3636,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:158</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:167</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
